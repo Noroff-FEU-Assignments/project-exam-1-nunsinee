@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+:root {
+	--main-bg: #f2f2f2;
+	--hightlight-color: #03a696;
+	--heading: #025159;
+	--white: #ffffff;
+	--black: #000;
+	--medium-green: #3d8a8b;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	background-color: var(--main-bg);
+	color: var(--black);
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px;
+}
+
+nav .mainMenu {
+	display: flex;
+	align-items: center;
+}
+
+nav .mainMenu li a {
+	display: inline-block;
+	padding: 15px;
+	text-transform: uppercase;
+	font-size: 150%;
+	color: var(--black);
+}
+
+nav .mainMenu li a:hover {
+	background-color: var(--hightlight-color);
+	color: var(--white);
+	border-radius: 4px;
+}
+
+nav .mainMenu li a.active {
+	color: var(--hightlight-color);
+	font-weight: bold;
+	align-items: center;
+}
+
+nav .mainMenu li a.active:hover {
+	color: var(--white);
+}
+
+nav .openMenu {
+	display: none;
+	font-size: 2rem;
+	margin: 20px;
+	cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+	font-size: 2rem;
+	display: none;
+	cursor: pointer;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
+	color: var(--white);
+}
+
+nav .logo {
+	margin: 6px;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+@media (max-width: 800px) {
+	nav {
+		padding: 20px 10px;
+	}
+	nav .mainMenu {
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--hightlight-color);
+		transition: top 1s ease;
+		display: none;
+	}
+
+	nav .mainMenu .closeMenu {
+		display: block;
+		position: absolute;
+		font-size: 130%;
+		top: 20px;
+		right: 20px;
+	}
+
+	nav .openMenu {
+		display: block;
+		/* padding: 20px 20px; */
+	}
+
+	nav .mainMenu li a:hover {
+		background: none;
+		color: var(--white);
+		font-size: 1.6rem;
+	}
+
+	nav .logo img {
+		max-width: 50%;
+	}
+
+	.icons i {
+		display: inline-block;
+		padding: 12px;
+	}
+
+	nav .mainMenu li a {
+		padding: 20px 0px;
+	}
+
+	nav .mainMenu li a.active {
+		color: var(--white);
+		border-radius: 4px;
+	}
+}
