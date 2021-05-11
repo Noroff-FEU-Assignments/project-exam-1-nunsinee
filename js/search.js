@@ -30,9 +30,11 @@ const outputHTML = (matches) => {
 		const html = matches
 			.map(
 				(match) => `
-				<div class="postresult">
-				<p>${match.title.rendered}</p>
-				<p><a href="blog_detail.html?id=${match.id}">Read</a></p>
+				<div class="post-item-results">
+				<div class="p-pic-s"><img id="smallImg" src="${match.images.medium}" alt="${match.title.rendered}"}></div>
+				<div class="p-name-s">${match.title.rendered}</div>
+				<div class="p-by-s"><span>By Nunsinee-${match.formatted_date}</span></div>
+				<div class="p-view-s"><a href="blog_detail.html?id=${match.id}">Read</a></div>
 				</div>`
 			)
 			.join("");
@@ -43,10 +45,3 @@ const outputHTML = (matches) => {
 
 //Search text and filter
 search.addEventListener("input", () => searchPosts(search.value));
-
-// <div class="post-item-results">
-// <div class="p-pic-s"><img id="smallImg" src="${match.images.medium}" alt="${match.title.rendered}"}></div>
-// <div class="p-name-s">${match.title.rendered}</div>
-// <div class="p-by-s"><span>By Nunsinee-${match.formatted_date}</span></div>
-// <div class="p-view-s"><a href="blog_detail.html?id=${match.id}">Read</a></div>
-// </div>`
