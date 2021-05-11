@@ -9,7 +9,7 @@
 .load-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 2em;
+	margin-top: 0em;
 	position: relative;
 	top: 8em;
 }
