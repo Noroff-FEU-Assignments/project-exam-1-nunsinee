@@ -279,7 +279,7 @@ footer a {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 0.5fr 0.2fr 0.3fr;
-		grid-template-areas: "p-pic " "p-name" "p-by" "p-view";
+		grid-template-areas: "p-pic" "p-name" "p-by" "p-view";
 		grid-gap: 1rem;
 		padding: 5px auto;
 		margin: 25px 0;

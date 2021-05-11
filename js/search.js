@@ -31,10 +31,10 @@ const outputHTML = (matches) => {
 			.map(
 				(match) => `
 				<div class="post-item-results">
-				<div class="p-pic"><img id="smallImg" src="${match.images.medium}" alt="${match.title.rendered}"}></div>
-				<div class="p-name">${match.title.rendered}</div>
-				<div class="p-by"><span>By Nunsinee-${match.formatted_date}</span></div>
-				<div class="p-view"><a href="blog_detail.html?id=${match.id}">Read</a></div>
+				<div class="p-pic-s"><img id="smallImg" src="${match.images.medium}" alt="${match.title.rendered}"}></div>
+				<div class="p-name-s">${match.title.rendered}</div>
+				<div class="p-by-s"><span>By Nunsinee-${match.formatted_date}</span></div>
+				<div class="p-view-s"><a href="blog_detail.html?id=${match.id}">Read</a></div>
 				</div>`
 			)
 			.join("");
