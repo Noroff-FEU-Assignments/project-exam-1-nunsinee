@@ -3,6 +3,7 @@
 :root {
 	--main-bg: #f2f2f2;
 	--hightlight-color: #03a696;
+	--active-button: #1494a0;
 	--heading: #025159;
 	--white: #ffffff;
 	--black: #000;
@@ -19,8 +20,9 @@ nav {
 	background-color: var(--main-bg);
 	color: var(--black);
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 20px 50px;
+	/* padding: 20px 50px; */
 }
 
 nav .mainMenu {
@@ -32,7 +34,8 @@ nav .mainMenu li a {
 	display: inline-block;
 	padding: 15px;
 	text-transform: uppercase;
-	font-size: 150%;
+	font-size: 250%;
+	font-weight: 800;
 	color: var(--black);
 }
 
@@ -43,7 +46,7 @@ nav .mainMenu li a:hover {
 }
 
 nav .mainMenu li a.active {
-	color: var(--hightlight-color);
+	color: var(--active-button);
 	font-weight: bold;
 	align-items: center;
 }
@@ -59,70 +62,85 @@ nav .openMenu {
 	cursor: pointer;
 }
 
-nav .mainMenu .closeMenu,
-.icons i {
+nav .mainMenu .closeMenu {
 	font-size: 2rem;
 	display: none;
 	cursor: pointer;
 }
 
-.fa-facebook:hover,
-.fa-twitter:hover,
-.fa-instagram:hover {
-	color: var(--white);
-}
-
 nav .logo {
 	margin: 6px;
-	font-size: 25px;
+	max-height: 100%;
 	cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1440px) {
+	nav .logo img {
+		max-width: 75%;
+	}
+
+	nav .mainMenu li a {
+		font-size: 150%;
+	}
+}
+
+@media (max-width: 1024px) {
+	nav .logo img {
+		max-width: 65%;
+	}
+
+	nav .mainMenu li a {
+		font-size: 120%;
+	}
+}
+
+@media (max-width: 830px) {
+	nav .logo img {
+		max-width: 55%;
+	}
+
+	nav .mainMenu li a {
+		font-size: 120%;
+	}
+}
+
+@media (max-width: 500px) {
 	nav {
-		padding: 20px 10px;
+		padding: 0px 10px;
 	}
 	nav .mainMenu {
-		height: 100vh;
-		position: fixed;
-		top: 0;
-		right: 0;
-		left: 0;
+		display: none;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	nav .mainMenu.show {
+		display: flex;
+		height: 60vh;
 		z-index: 10;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		background-color: var(--hightlight-color);
-		transition: top 1s ease;
-		display: none;
+		transition: top 0.5s ease;
+	}
+
+	nav .openMenu {
+		display: block;
 	}
 
 	nav .mainMenu .closeMenu {
 		display: block;
 		position: absolute;
-		font-size: 130%;
-		top: 20px;
-		right: 20px;
-	}
-
-	nav .openMenu {
-		display: block;
-		/* padding: 20px 20px; */
+		font-size: 150%;
+		top: 120px;
+		right: 40px;
 	}
 
 	nav .mainMenu li a:hover {
 		background: none;
 		color: var(--white);
 		font-size: 1.6rem;
-	}
-
-	nav .logo img {
-		max-width: 50%;
-	}
-
-	.icons i {
-		display: inline-block;
-		padding: 12px;
 	}
 
 	nav .mainMenu li a {
@@ -132,5 +150,14 @@ nav .logo {
 	nav .mainMenu li a.active {
 		color: var(--white);
 		border-radius: 4px;
+	}
+	nav .logo img {
+		max-width: 55%;
+	}
+}
+
+@media (max-width: 320px) {
+	nav .mainMenu li a {
+		font-size: 100%;
 	}
 }

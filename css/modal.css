@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap");
+
+:root {
+	--main-bg: #f2f2f2;
+	--hightlight-color: #03a696;
+	--darg-green: #025159;
+	--heading: #636c6d;
+	--white: #ffffff;
+	--black: #000;
+	--medium-green: #3d8a8b;
+	--footer-color: #04747f;
+	--border-radius-image: 5px;
+	--padding-left-right: 0 20px;
+	--main-padding: 10px 0 0 0;
+	--padding-left: 20px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "PT sans", serif;
+}
+
+.img-excepert {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	background-color: #ffffff;
+	border-top-left-radius: var(--border-radius-image);
+	border-top-right-radius: var(--border-radius-image);
+	height: auto;
+}
+
+.excerpt {
+	order: 1;
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 110%;
+	max-width: 100%;
+	padding: 10px;
+}
+
+.excerpt p {
+	width: 100%;
+	font-size: 110%;
+	font-weight: bolder;
+	font-family: "PT sans", serif;
+	text-align: center;
+	color: var(--darg-green);
+	padding-top: 10px;
+}
+
+.image:first-child {
+	order: 2;
+	cursor: pointer;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	max-width: 100%;
+	padding-bottom: 20px;
+}
+
+.image img {
+	max-width: 100%;
+	height: 160px;
+	border-radius: none;
+	margin: 5px 0;
+}
+
+.image:hover {
+	transform: scale(0.9);
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+.fas {
+	color: white;
+	font-size: 250%;
+}
+
+.modal {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	z-index: 100;
+	overflow: hidden;
+	border-radius: 4px;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modal.appear {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.modal.appear .modalImg,
+.modal.appear .modalText {
+	animation: zoom 0.3s linear;
+}
+
+.modalContent {
+	min-height: 320px; /*edit from 100vh*/
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modalImg {
+	max-height: 100%;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+}
+
+.close {
+	position: absolute;
+	top: 2em;
+	right: 1.5rem;
+	cursor: pointer;
+}
+
+@keyframes zoom {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@media screen and (min-width: 414px) {
+	.image img {
+		height: 190px;
+		margin: 5px 0;
+	}
+	.excerpt p {
+		font-size: 120%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.img-excepert {
+		flex-direction: row;
+		height: auto;
+	}
+
+	.image:first-child {
+		order: 1;
+		width: 30%;
+		margin: 50px 0 0 20px;
+		max-width: 100%;
+	}
+
+	.excerpt {
+		order: 2;
+		width: 50%;
+		margin: 50px 0 0 0px;
+	}
+
+	.image img {
+		height: 200px;
+	}
+
+	.excerpt {
+		padding: 0;
+	}
+
+	.excerpt p {
+		font-size: 130%;
+		text-align: left;
+		padding: 30px;
+	}
+}
+
+@media screen and (min-width: 834px) {
+	.img-excepert {
+		background-color: var(--main-bg);
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+	.image:first-child {
+		width: 45%;
+	}
+
+	.excerpt {
+		width: 55%;
+	}
+
+	.image img {
+		height: 220px;
+	}
+
+	.excerpt p {
+		font-size: 140%;
+		padding-right: 20px;
+	}
+}
+
+@media screen and (min-width: 1204px) {
+	.modal {
+		left: 5%;
+		width: 80%;
+		height: 100vh;
+		padding: 60px 20px;
+	}
+
+	.close {
+		position: absolute;
+		top: 2em;
+		right: 2rem;
+		cursor: pointer;
+	}
+
+	.img-excepert {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.image:first-child {
+		width: 30%;
+		margin: 20px 0;
+	}
+
+	.excerpt {
+		width: 40%;
+	}
+
+	.image img {
+		height: 230px;
+	}
+
+	.excerpt p {
+		font-size: 150%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.modal {
+		left: 5%;
+		width: 70%;
+		height: 90vh;
+	}
+
+	.img-excepert {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.image img {
+		height: 280px;
+	}
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+	.modal {
+		left: 5%;
+		width: 80%;
+		height: 90vh;
+	}
+
+	.img-excepert {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.image:first-child {
+		order: 1;
+		width: 40%;
+		margin: 20px 0;
+	}
+
+	.excerpt {
+		order: 2;
+		width: 50%;
+	}
+
+	p {
+		line-height: 3rem;
+	}
+
+	.close {
+		top: 2em;
+		right: 1rem;
+	}
+
+	.fad {
+		font-size: 300%;
+	}
+
+	.img-excepert {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.excerpt p {
+		font-size: 180%;
+	}
+
+	.image img {
+		height: 300px;
+	}
+}

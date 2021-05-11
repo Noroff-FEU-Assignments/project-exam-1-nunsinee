@@ -4,11 +4,12 @@
 	--main-bg: #f2f2f2;
 	--hightlight-color: #03a696;
 	--darg-green: #025159;
-	--button-darkgreen: #1a5c63;
 	--heading: #636c6d;
 	--white: #ffffff;
 	--black: #000;
 	--medium-green: #3d8a8b;
+	--orange-bg: #e4844c;
+	--button-bg: #99dada;
 	--border-radius-image: 5px;
 	--padding-left-right: 0 20px;
 	--main-padding: 10px 0 0 0;
@@ -33,7 +34,6 @@ body {
 img {
 	max-width: 100%;
 	max-height: 100%;
-	border-radius: var(--border-radius-image);
 	display: block;
 }
 
@@ -41,16 +41,14 @@ img {
 	display: grid;
 	height: 100vh;
 	grid-template-columns: 1fr;
-	grid-template-rows: 0.4fr 2fr 2fr 5fr 0.1fr;
+	grid-template-rows: 0.4fr 2fr 4fr 0.1fr;
 	grid-template-areas:
 		"nav"
 		"hero"
-		"slide"
 		"main"
 		"footer";
 
 	grid-gap: 0.5rem;
-	margin: 0 auto;
 }
 
 nav {
@@ -67,27 +65,22 @@ nav {
 	padding: var(--padding-left-right);
 	align-content: space-between;
 }
+
 .hero h1 {
 	width: 100%;
-	color: #111010;
-	background: rgba(252, 250, 243, 0.33);
-	font-size: 100%;
+	color: var(--black);
 	padding: 5px;
+	font-family: "PT sans", serif;
+	font-size: 100%;
+	background-color: rgba(229, 252, 253, 0.3);
 }
 
 .hero .fab {
 	color: var(--black);
 }
 
-.slide {
-	grid-area: slide;
-	border-radius: var(--main-radius);
-	padding-top: var(--main-padding);
-	max-width: 100%;
-	margin: 5px auto;
-}
-
 main {
+	background: var(--main-bg);
 	grid-area: main;
 	border-radius: var(--main-radius);
 	padding-top: var(--main-padding);
@@ -125,57 +118,44 @@ footer {
 	border-radius: var(--border-radius-image);
 }
 
-.slide a {
-	margin: 2px 5px;
-	color: var(--button-darkgreen);
-	text-decoration-line: underline;
-	font-size: 110%;
-}
-
-.slide h2 {
-	color: var(--button-darkgreen);
-	font-size: 110%;
-}
-
 .heading-1 {
 	font-family: "PT sans", serif;
 	font-size: 120%;
 	text-transform: uppercase;
 }
 
-.slide h1 {
-	padding-left: 20px;
-}
-
 main h2 {
-	padding: 20px 0px;
 	font-family: "PT sans", serif;
 	font-size: 110%;
-	margin: 0 auto;
-}
-
-section h2 {
-	font-size: 110%;
+	margin-top: 30px;
+	padding-bottom: 10px;
 }
 
 /*Latest Posted Area*/
-.postlist-container {
+
+.postItems-container,
+.postItems-container-more {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
 	padding: 10px 10px;
-	border-radius: var(--border-radius-image);
+	margin: 0 auto;
+	justify-content: center;
 }
 
-.post-item {
+.post-item,
+.postItems-results {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 2fr 0.5fr 0.2fr 0.3fr;
 	grid-template-areas:
-		"p-pic "
-		"p-name "
+		"p-pic"
+		"p-name"
 		"p-by"
 		"p-view";
 
-	width: 100%;
 	grid-gap: 1rem;
+	width: 100%;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 	margin: 20px 0px;
@@ -189,13 +169,14 @@ section h2 {
 }
 
 .p-pic img {
-	height: 90px;
+	height: 100px;
+	width: 100%;
+	border-radius: var(--border-radius-image);
 }
 
 .p-name {
 	grid-area: p-name;
 	font-weight: bold;
-	font-size: 100%;
 }
 
 .p-by {
@@ -205,20 +186,22 @@ section h2 {
 
 .p-view {
 	grid-area: p-view;
-	font-size: 110%;
-}
-
-.p-name h4 {
-	font-size: 110%;
+	font-size: 90%;
 }
 
 .p-view a {
 	color: var(--darg-green);
+	font-weight: bold;
 	background-color: var(--main-bg);
-	padding: 5px 8px;
+	padding: 2px 8px;
+	border-radius: var(--border-radius-image);
+	cursor: pointer;
+	font-size: 110%;
+	transition: all 0.4s ease;
 }
 
-.view-more-post {
+.view-more-post,
+.view-more-postless {
 	display: block;
 	max-width: 90%;
 	background-color: var(--darg-green);
@@ -232,59 +215,27 @@ section h2 {
 	cursor: pointer;
 }
 
-.view-more-post a {
-	color: var(--white);
-	padding: 5px 10px;
-}
-
 footer a {
 	width: 100%;
 	padding: var(--padding-left-right);
-	font-size: 100%;
 	color: var(--darg-green);
 	padding-bottom: 20px;
 	margin: 20px 0;
 }
 
-@media screen and (min-width: 375px) {
-	.p-pic img {
-		height: 90px;
-		width: 100%;
-	}
+/* Toggle */
+.view-more-postless {
+	display: none;
 }
 
 /* WEB RESPONSIVE */
 
 @media screen and (min-width: 414px) {
 	.hero-img {
-		width: 370px;
-	}
-	.slide {
-		width: 95%;
-	}
-	.p-pic img {
-		height: 90px;
-	}
-
-	.controls .arrow {
-		top: 30%;
-	}
-
-	.p-name {
-		font-size: 110%;
-	}
-
-	.p-by {
-		font-size: 90%;
+		height: 120px;
 	}
 	footer a {
 		font-size: 110%;
-	}
-}
-
-@media screen and (min-width: 500px) {
-	.hero-img {
-		height: 120px;
 	}
 }
 
@@ -296,12 +247,6 @@ footer a {
 
 	.hero-img {
 		height: 200px;
-		width: 100%;
-	}
-
-	.hero h1 {
-		font-size: 120%;
-		padding: 10px;
 	}
 
 	.hero .fab {
@@ -310,16 +255,20 @@ footer a {
 		font-size: 130%;
 	}
 
+	.hero h1 {
+		font-size: 120%;
+		padding: 10px;
+	}
+
 	main h2 {
-		font-size: 1.6rem;
+		font-size: 180%;
+		margin-top: 50px;
+		padding: 0 20px;
 	}
 
-	.slide h2 {
-		color: var(--button-darkgreen);
-		font-size: 130%;
-	}
-
-	.postlist-container {
+	.postItems-container,
+	.postItems-container-more {
+		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
@@ -329,20 +278,22 @@ footer a {
 	.post-item {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 2fr 0.5fr 0.2fr 0.3fr;
-		grid-template-areas:
-			"p-pic "
-			"p-name "
-			"p-by"
-			"p-view";
-
-		grid-gap: 0.2rem;
-		width: 100%;
-		margin: 30px 0;
+		grid-template-rows: 1fr 0.5fr 0.2fr 0.3fr;
+		grid-template-areas: "p-pic " "p-name" "p-by" "p-view";
+		grid-gap: 1rem;
+		padding: 5px auto;
+		margin: 25px 0;
+		padding: 20px 20px;
 	}
 
 	.p-pic img {
-		height: 130px;
+		height: 150px;
+	}
+
+	.p-name,
+	.p-by,
+	.p-view {
+		padding: 0 8px;
 	}
 
 	.p-name {
@@ -350,27 +301,32 @@ footer a {
 	}
 
 	.p-by {
-		font-size: 110%;
+		font-size: 100%;
 	}
 
-	.slide a {
-		margin: 2px 5px;
-		color: var(--button-darkgreen);
-		text-decoration-line: underline;
-		font-size: 140%;
+	.p-view {
+		font-size: 120%;
 	}
-
-	p-view a {
+	.view-more-post,
+	.view-more-postless {
 		font-size: 120%;
 	}
 
-	.view-more-post a {
-		font-size: 140%;
-		max-width: 90%;
+	.social-share {
+		width: 100%;
 	}
 
 	footer a {
 		font-size: 120%;
+	}
+
+	.api-error {
+		width: 200px;
+		font-size: 120%;
+		border: 1px solid rgb(238, 15, 15);
+		padding: 1rem;
+		color: rgb(230, 53, 53);
+		background: rgba(255, 0, 0, 0.1);
 	}
 }
 
@@ -380,20 +336,12 @@ footer a {
 	}
 
 	.p-name {
-		font-size: 140%;
+		font-size: 145%;
 	}
 
-	.p-by {
-		font-size: 110%;
-	}
-
-	.view-more-post a {
-		font-size: 140%;
-		max-width: 90%;
-	}
-
-	p-view a {
-		font-size: 130%;
+	.p-pic img {
+		height: 150px;
+		margin-bottom: 10px;
 	}
 
 	footer a {
@@ -402,60 +350,36 @@ footer a {
 }
 
 @media screen and (min-width: 1024px) {
+	main {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.postItems-container,
+	.postItems-container-more {
+		grid-gap: 3rem;
+	}
+
+	.post-item {
+		grid-template-rows: 1fr 0.2fr 0.1fr 0.2fr;
+	}
+
 	.hero-img {
 		height: 250px;
 	}
 
+	.hero .fab {
+		padding: 10px;
+		font-size: 180%;
+	}
+
+	main h2 {
+		font-size: 180%;
+		padding-left: 20px;
+	}
+
 	.hero h1 {
 		font-size: 180%;
-	}
-
-	section h2 {
-		font-size: 150%;
-	}
-
-	.slide h1 {
-		padding-left: 20px;
-		font-size: 190%;
-	}
-
-	.slide h2 {
-		color: var(--button-darkgreen);
-		font-size: 180%;
-	}
-
-	.p-name h3 {
-		font-size: 100%;
-	}
-
-	.slide a {
-		font-size: 180%;
-	}
-
-	.fab {
-		padding: 10px;
-		font-size: 20px;
-	}
-
-	.postlist-container {
-		padding: 30px 40px;
-	}
-
-	.post-item {
-		margin-bottom: 20px;
-	}
-
-	.p-pic img {
-		height: 160px;
-	}
-
-	.p-name {
-		font-size: 160%;
-		margin-bottom: 10px;
-	}
-
-	.p-by {
-		font-size: 120%;
 	}
 
 	.p-view a,
@@ -464,94 +388,106 @@ footer a {
 		font-weight: 700;
 	}
 
-	.view-more-post a {
-		font-size: 150%;
-		max-width: 90%;
+	.match-post {
+		width: 50%;
+		margin: 0 auto;
 	}
 
 	footer a {
 		font-size: 140%;
 	}
 }
-/* Change grid for lastest posted */
+
 @media screen and (min-width: 1280px) {
+	main {
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	nav {
+		padding-bottom: 20px;
+	}
+
 	.hero h1 {
-		font-size: 190%;
+		font-size: 180%;
+		padding: 20px;
+	}
+
+	main h2 {
+		margin-top: 50px;
 	}
 
 	.hero-img {
 		height: 300px;
 	}
 
-	.fab {
+	.hero .fab {
 		padding: 10px;
 		font-size: 180%;
 	}
 
-	main h2 {
-		font-size: 150%;
-	}
-
-	.postlist-container {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		padding: 20 0px;
-	}
-
-	.p-pic,
-	.p-name,
-	.p-by,
-	.p-view {
-		padding: 0 10px;
-	}
-
-	.p-pic img {
-		height: 220px;
-	}
-
-	.p-name {
-		font-size: 150%;
-	}
-
-	.p-by {
-		font-size: 130%;
+	footer a {
+		margin-top: 40px;
 	}
 
 	.view-more-post a {
-		font-size: 150%;
+		font-size: 140%;
 	}
 
-	.p-name h3 {
-		font-size: 110%;
+	.p-pic img {
+		height: 180px;
+	}
+
+	.p-by {
+		font-size: 120%;
 	}
 
 	footer a {
-		margin-top: 40px;
-		font-size: 150;
+		font-size: 150%;
 	}
 }
 
-@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+@media screen and (min-width: 1440px) {
 	main {
-		width: 90%;
+		width: 95%;
 		margin: 0 auto;
 	}
 
-	.hero h1 {
-		font-size: 200%;
-		padding: 20px;
+	nav {
+		padding-bottom: 40px;
 	}
 
-	.hero .fab {
+	.p-name {
 		font-size: 180%;
 	}
 
-	.postlist-container {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-		grid-gap: 3rem;
-		height: auto;
-		margin-bottom: 50px;
+	.hero-img {
+		height: 350px;
+	}
+
+	.hero {
+		margin-bottom: 10px;
+	}
+
+	.p-by {
+		font-size: 150%;
+	}
+
+	.heading-1 {
+		font-size: 180%;
+	}
+
+	.p-pic img {
+		height: 150px;
+	}
+
+	section h2 {
+		font-size: 180%;
+	}
+
+	main h2 {
+		font-size: 200%;
+		padding: 0 0 50px 10px;
 	}
 
 	.p-view a,
@@ -561,8 +497,45 @@ footer a {
 		padding: 5px 20px;
 	}
 
+	.postItems-container,
+	.postItems-container-more {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 2.5rem;
+	}
+
+	.post-item {
+		grid-template-rows: 1.2fr 0.2fr 0.1fr 0.1fr;
+		padding: 40px;
+	}
+
+	footer a {
+		font-size: 170%;
+	}
+}
+
+@media screen and (min-width: 1920px) {
 	nav {
-		padding-bottom: 40px;
+		padding-bottom: 20px;
+	}
+
+	.hero h1 {
+		font-size: 250%;
+	}
+
+	main h2,
+	main h4 {
+		font-size: 300%;
+	}
+
+	.hero .fab {
+		padding: 10px;
+		font-size: 250%;
+	}
+
+	.p-name {
+		font-size: 200%;
 	}
 
 	.hero-img {
@@ -573,57 +546,22 @@ footer a {
 		margin-bottom: 100px;
 	}
 
-	.slide {
-		margin-bottom: 100px;
-	}
-
-	.slide h1 {
-		padding: 0 0 0px 100px;
-	}
-
-	.slide h2 {
-		font-size: 250%;
-	}
-
-	.slide a {
-		font-size: 200%;
-		font-weight: 700;
-	}
-
-	.heading-1 {
-		font-size: 200%;
-	}
-
-	section h2 {
-		font-size: 200%;
-	}
-
-	main h2 {
-		font-size: 250%;
-		padding: 100px 0 0px 80px;
-	}
-
-	.p-pic img {
-		max-height: 220px;
-	}
-
-	.p-name h3 {
-		font-size: 120%;
-	}
-
-	.p-by {
+	.p-view,
+	.p-view a {
 		font-size: 140%;
 	}
 
-	.view-more-post a {
-		font-size: 150%;
+	.p-pic img {
+		height: 250px;
 	}
 
-	footer {
-		padding-top: 5em;
+	.view-more-post,
+	.view-more-postless {
+		font-size: 180%;
+		max-width: 95%;
 	}
 
 	footer a {
-		font-size: 180%;
+		font-size: 200%;
 	}
 }

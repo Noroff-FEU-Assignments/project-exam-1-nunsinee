@@ -1,0 +1,78 @@
+:root {
+	--main-bg: #f2f2f2;
+	--hightlight-color: #8bf1e7;
+	--darg-green: #025159;
+	--light-orange: #f1ce80;
+	--darg-orange: #f75e06;
+}
+
+.load-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
+	position: relative;
+	top: 8em;
+}
+
+.loader {
+	position: relative;
+}
+
+.loader::before,
+.loader::after {
+	content: "";
+	width: 1.5em;
+	height: 1.5em;
+	position: absolute;
+	border-radius: 4em;
+}
+
+.loader::before {
+	background: var(--darg-green);
+	left: 0;
+	transform: translateX(10px);
+	animation: Moveright 2s ease infinite;
+}
+
+.loader::after {
+	background: var(--darg-orange);
+	right: 0;
+	transform: translateX(-10px);
+	animation: Moveleft 1s ease infinite;
+}
+
+@keyframes Moveright {
+	0% {
+		transform: translateX(-10px);
+	}
+	50% {
+		transform: translateX(10px);
+		background: var(--hightlight-color);
+	}
+	100% {
+		transform: translateX(-10px);
+	}
+}
+@keyframes Moveleft {
+	0% {
+		transform: translateX(10px);
+	}
+	50% {
+		transform: translateX(-10px);
+		background: var(--light-orange);
+	}
+	100% {
+		transform: translateX(10px);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.loader::before,
+	.loader::after {
+		content: "";
+		width: 3em;
+		height: 3em;
+		position: absolute;
+		border-radius: 4em;
+	}
+}
