@@ -139,10 +139,10 @@ main h2 {
 	padding: 10px 10px;
 	margin: 0 auto;
 	justify-content: center;
+	height: auto;
 }
 
-.post-item,
-.postItems-results {
+.post-item {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 2fr 0.5fr 0.2fr 0.3fr;
