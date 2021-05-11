@@ -146,6 +146,9 @@ input[type="text"] {
 	font-size: 90%;
 }
 
+@media screen and (min-width: 414px) {
+}
+
 @media screen and (min-width: 768px) {
 	.postItems-container-results {
 		width: 100%;
@@ -158,7 +161,7 @@ input[type="text"] {
 		width: 100%;
 	}
 
-	.post-item-results .p-name {
+	.post-item-results .p-name-s {
 		font-size: 120%;
 	}
 
@@ -192,7 +195,7 @@ input[type="text"] {
 	main h4 {
 		font-size: 220%;
 	}
-	.post-item-results .p-by {
+	.post-item-results .p-by-s {
 		font-size: 100%;
 	}
 }
