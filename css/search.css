@@ -60,7 +60,7 @@ body {
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 	margin: 20px 0px;
 	padding: 20px;
-	background-color: var(--white);
+	background-color: rgba(237, 255, 72, 0.15);
 	border-radius: var(--border-radius-image);
 	height: 260px;
 }
@@ -108,7 +108,7 @@ body {
 }
 
 .search-container {
-	width: 100%;
+	width: 90%;
 	text-align: center;
 	padding: 30px 10px;
 	display: flex;
@@ -137,12 +137,12 @@ main h4 {
 	content: "🔍";
 	position: absolute;
 	top: 10px;
-	right: 15px;
+	right: 30px;
 	font-size: 80%;
 }
 
 input[type="text"] {
-	width: 100%;
+	width: 90%;
 	background-color: var(--white);
 	border: none;
 	border: 1px solid var(--darg-green);
