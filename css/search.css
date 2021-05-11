@@ -24,6 +24,12 @@
 	text-decoration: none;
 }
 
+body {
+	font-family: "PT sans", serif;
+	background: var(--main-bg);
+	font-size: 100%;
+}
+
 .match-post {
 	max-width: 100%;
 	max-height: 100%;

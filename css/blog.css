@@ -28,7 +28,6 @@ body {
 	font-family: "PT sans", serif;
 	background: var(--main-bg);
 	font-size: 100%;
-	height: auto;
 }
 
 img {
@@ -148,7 +147,7 @@ main h2 {
 .post-item {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 0.2fr 0.1fr 0.2fr;
+	grid-template-rows: 1.5fr 0.3fr 0.1fr 0.1fr;
 	grid-template-areas:
 		"p-pic"
 		"p-name"
@@ -163,7 +162,7 @@ main h2 {
 	padding: 20px;
 	background-color: var(--white);
 	border-radius: var(--border-radius-image);
-	max-height: 240px;
+	max-height: 260px;
 }
 
 .p-pic {
