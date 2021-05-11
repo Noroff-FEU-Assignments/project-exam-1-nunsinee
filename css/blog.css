@@ -163,7 +163,7 @@ main h2 {
 	padding: 20px;
 	background-color: var(--white);
 	border-radius: var(--border-radius-image);
-	max-height: 300px;
+	max-height: 250px;
 }
 
 .p-pic {

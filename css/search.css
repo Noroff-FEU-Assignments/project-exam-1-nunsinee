@@ -48,7 +48,7 @@ body {
 .post-item-results {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 2fr 0.5fr 0.2fr 0.3fr;
+	grid-template-rows: 1fr 0.2fr 0.1fr 0.2fr;
 	grid-template-areas:
 		"p-pic-s"
 		"p-name-s"
@@ -63,7 +63,7 @@ body {
 	padding: 20px;
 	background-color: var(--white);
 	border-radius: var(--border-radius-image);
-	height: 300px;
+	height: 250px;
 }
 
 .p-pic-s {
