@@ -20,17 +20,22 @@
 	max-width: 90%;
 	width: 320px;
 	margin: 0 auto;
-	height: 100%;
+	height: auto;
+}
+
+.postresult {
+	max-width: 100%;
+	height: auto;
 }
 
 .postItems-container-results {
 	width: 80%;
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
+	display: block;
+	/* flex-direction: column;
+	margin: 0 auto; */
 }
 
-.post-item-results {
+/* .post-item-results {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 2fr 0.5fr 0.2fr 0.3fr;
@@ -48,7 +53,7 @@
 	padding: 20px;
 	background-color: var(--white);
 	border-radius: var(--border-radius-image);
-}
+} */
 
 .p-pic-s {
 	grid-area: p-pic-s;
