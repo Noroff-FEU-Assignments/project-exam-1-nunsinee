@@ -71,16 +71,16 @@ body {
 
 .search-container {
 	width: 100%;
-	margin: 50 auto;
-	text-align: left;
-	padding: 10px;
+	text-align: center;
+	padding: 30px 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	justify-items: center;
+	align-items: center;
 	background-color: rgba(230, 255, 252, 0.15);
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	border-radius: var(--border-radius-image);
+	margin: 0 auto;
 }
 
 main h4 {
@@ -111,7 +111,6 @@ input[type="text"] {
 	border-radius: var(--border-radius-image);
 	padding: 5px 5px;
 	height: 2rem;
-	margin-bottom: 50px;
 	font-size: 90%;
 }
 
@@ -153,6 +152,7 @@ input[type="text"] {
 		width: 80%;
 		margin: 0 auto;
 		text-align: left;
+		margin-bottom: 50px;
 	}
 
 	main h4 {
@@ -178,10 +178,8 @@ input[type="text"] {
 	main h4 {
 		font-size: 220%;
 	}
-	main h2 {
-		font-size: 200%;
-		padding-left: 40px;
-		padding-top: 70px;
+	.post-item-results .p-by {
+		font-size: 100%;
 	}
 }
 
@@ -193,6 +191,15 @@ input[type="text"] {
 	input[type="text"] {
 		font-size: 130%;
 		height: 3rem;
+	}
+
+	.search-container {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 50px;
+		align-items: center;
+		padding-top: 50px;
 	}
 
 	#search-form::after {

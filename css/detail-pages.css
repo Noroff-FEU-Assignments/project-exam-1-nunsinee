@@ -64,9 +64,6 @@ nav {
 	max-width: 100%;
 	display: flex;
 	flex-direction: column;
-	color: var(--darg-green);
-	border-radius: var(--main-radius);
-	padding: var(--padding-left-right);
 	align-content: space-between;
 }
 
@@ -90,7 +87,6 @@ main {
 	padding-top: var(--main-padding);
 	padding: var(--padding-left-right);
 	max-width: 100%;
-	width: 320px;
 }
 
 footer {
@@ -104,6 +100,7 @@ footer {
 	width: 100%;
 	display: block;
 	text-align: right;
+	padding-right: 10px;
 }
 
 .fab {
@@ -116,7 +113,6 @@ footer {
 	height: 100px;
 	background-position: center;
 	background-size: cover;
-	border-radius: var(--border-radius-image);
 }
 
 .hero-img img {
@@ -130,7 +126,7 @@ footer {
 }
 
 main h2 {
-	padding-bottom: 5px;
+	padding-top: 20px;
 	font-family: "PT sans", serif;
 	font-size: 120%;
 }
@@ -139,7 +135,6 @@ main h4 {
 	padding-bottom: 5px;
 	font-family: "PT sans", serif;
 	font-size: 100%;
-	margin-left: 20px;
 	color: var(--heading);
 }
 
@@ -165,15 +160,6 @@ p {
 }
 
 /* adjust for modal image---end*/
-
-footer a {
-	width: 100%;
-	padding: var(--padding-left-right);
-	font-size: 100%;
-	color: var(--footer-color);
-	padding-bottom: 20px;
-	margin: 20px 0;
-}
 
 /* Comment Form*/
 
@@ -249,6 +235,28 @@ button {
 	margin-left: 20px;
 	font-size: 120%;
 	cursor: pointer;
+}
+
+footer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: var(--padding-left-right);
+	font-size: 100%;
+	padding: 20px;
+	margin: 20px 0;
+}
+/* Change to comment form */
+
+footer {
+	width: 100%;
+	font-size: 100%;
+	padding-bottom: 20px;
+	margin: 20px 0;
+}
+
+footer a {
+	color: var(--footer-color);
 }
 
 /* WEB RESPONSIVE */
@@ -363,13 +371,13 @@ button {
 	}
 
 	main {
-		width: 834px;
+		width: 95%;
 	}
 
 	main h2 {
 		font-size: 200%;
 		padding-left: 0px;
-		width: 80%;
+		width: 90%;
 		margin: 0 auto;
 	}
 
@@ -382,6 +390,12 @@ button {
 
 	.content-box {
 		background: var(--main-bg);
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.image img {
+		height: 200px;
 	}
 
 	footer a {
@@ -393,6 +407,20 @@ button {
 	main {
 		margin: 0 auto;
 		width: 90%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.image img {
+		height: 240px;
+	}
+
+	main h2 {
+		font-size: 200%;
+		padding-left: 70px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
 	}
 
 	.content-box {
@@ -424,10 +452,39 @@ button {
 	}
 }
 
+@media screen and (min-width: 1280px) {
+	.img-excepert {
+		max-width: 70%;
+	}
+
+	main h2 {
+		font-size: 200%;
+		padding-left: 75px;
+		width: 85%;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	main h4 {
+		font-size: 120%;
+		padding-left: 70px;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.content-box {
+		padding: 0;
+	}
+
+	p {
+		width: 800px;
+	}
+}
+
 @media only screen and (min-width: 1440px) and (max-width: 1920px) {
 	main {
 		margin: 0 auto;
-		width: 90%;
+		width: 80%;
 	}
 
 	.image:first-child {
@@ -479,79 +536,5 @@ button {
 		margin-top: 100px;
 		padding-left: 90px;
 		font-size: 150%;
-	}
-}
-
-@media only screen and (min-width: 1440px) and (max-width: 1920px) {
-	main {
-		margin: 0 auto;
-		width: 70%;
-	}
-
-	.img-excepert {
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	.comment-respond h3 {
-		padding-top: 200px;
-	}
-
-	.content-box {
-		margin: 0 auto;
-		width: 90%;
-	}
-
-	.comment-respond {
-		padding-bottom: 150px;
-	}
-
-	.hero .fab {
-		font-size: 250%;
-	}
-
-	nav {
-		padding-bottom: 40px;
-	}
-
-	.hero-img {
-		height: 350px;
-	}
-
-	.hero {
-		margin-bottom: 10px;
-	}
-
-	.heading-1 {
-		font-size: 180%;
-	}
-
-	.hero h1 {
-		font-size: 250%;
-		padding: 10px;
-		width: 100%;
-	}
-
-	main h2 {
-		font-size: 250%;
-		padding: 0 0 10px 0px;
-		margin: 0 auto;
-		width: 80%;
-	}
-
-	main h4 {
-		font-size: 150%;
-		padding: 0 0 20px 0px;
-		margin: 0 auto;
-		width: 80%;
-	}
-
-	input[type="checkbox"] {
-		width: 60px;
-		height: 60px;
-	}
-
-	footer a {
-		font-size: 170%;
 	}
 }

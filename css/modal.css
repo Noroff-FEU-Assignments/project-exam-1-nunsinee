@@ -28,7 +28,6 @@
 	max-width: 100%;
 	background-color: #ffffff;
 	border-top-left-radius: var(--border-radius-image);
-	border-top-right-radius: var(--border-radius-image);
 	height: auto;
 }
 
@@ -42,10 +41,10 @@
 
 .excerpt p {
 	width: 100%;
-	font-size: 110%;
+	font-size: 100%;
 	font-weight: bolder;
 	font-family: "PT sans", serif;
-	text-align: center;
+	text-align: left;
 	color: var(--darg-green);
 	padding-top: 10px;
 }
@@ -140,13 +139,21 @@
 	}
 }
 
+@media screen and (min-width: 375px) {
+	.image img {
+		height: 180px;
+		margin: 5px 0;
+	}
+}
+
 @media screen and (min-width: 414px) {
 	.image img {
-		height: 190px;
+		height: 220px;
 		margin: 5px 0;
 	}
 	.excerpt p {
-		font-size: 120%;
+		font-size: 110%;
+		line-height: 1.7rem;
 	}
 }
 
@@ -158,9 +165,8 @@
 
 	.image:first-child {
 		order: 1;
-		width: 30%;
+		width: 50%;
 		margin: 50px 0 0 20px;
-		max-width: 100%;
 	}
 
 	.excerpt {
@@ -180,27 +186,29 @@
 	.excerpt p {
 		font-size: 130%;
 		text-align: left;
-		padding: 30px;
+		padding: 0 0 0 20px;
 	}
 }
 
 @media screen and (min-width: 834px) {
 	.img-excepert {
 		background-color: var(--main-bg);
-		max-width: 80%;
+		max-width: 100%;
 		margin: 0 auto;
 	}
 
 	.image:first-child {
-		width: 45%;
+		order: 1;
+		width: 50%;
 	}
 
 	.excerpt {
-		width: 55%;
+		padding: 0;
+		width: 50%;
 	}
 
 	.image img {
-		height: 220px;
+		height: 230px;
 	}
 
 	.excerpt p {
@@ -212,7 +220,7 @@
 @media screen and (min-width: 1204px) {
 	.modal {
 		left: 5%;
-		width: 80%;
+		width: 90%;
 		height: 100vh;
 		padding: 60px 20px;
 	}
@@ -225,7 +233,7 @@
 	}
 
 	.img-excepert {
-		width: 70%;
+		max-width: 100%;
 		margin: 0 auto;
 	}
 
@@ -234,16 +242,14 @@
 		margin: 20px 0;
 	}
 
-	.excerpt {
-		width: 40%;
-	}
-
 	.image img {
 		height: 230px;
 	}
 
 	.excerpt p {
-		font-size: 150%;
+		font-size: 140%;
+		padding: 0;
+		line-height: 2.5rem;
 	}
 }
 
@@ -255,12 +261,28 @@
 	}
 
 	.img-excepert {
-		width: 100%;
-		margin: 0 auto;
+		max-width: 70%;
+		margin: 30px auto;
+	}
+
+	.image:first-child {
+		width: 40%;
+		margin: 0;
+	}
+
+	.excerpt {
+		margin: 0;
+		padding: 20;
+	}
+
+	.excerpt p {
+		font-size: 140%;
+		line-height: 2.5rem;
+		margin: 20px;
 	}
 
 	.image img {
-		height: 280px;
+		height: 240px;
 	}
 }
 
@@ -274,6 +296,7 @@
 	.img-excepert {
 		width: 60%;
 		margin: 0 auto;
+		padding-top: 30px;
 	}
 
 	.image:first-child {

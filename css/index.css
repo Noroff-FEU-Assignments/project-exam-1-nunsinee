@@ -62,11 +62,9 @@ nav {
 	max-width: 100%;
 	display: flex;
 	flex-direction: column;
-	color: var(--darg-green);
-	border-radius: var(--main-radius);
-	padding: var(--padding-left-right);
 	align-content: space-between;
 }
+
 .hero h1 {
 	width: 100%;
 	color: #111010;
@@ -105,6 +103,7 @@ footer {
 	width: 100%;
 	display: block;
 	text-align: right;
+	padding-right: 10px;
 }
 
 .fab {
@@ -117,7 +116,6 @@ footer {
 	height: 100px;
 	background-position: center;
 	background-size: cover;
-	border-radius: var(--border-radius-image);
 }
 
 .hero-img img {
@@ -144,14 +142,14 @@ footer {
 }
 
 .slide h1 {
-	padding-left: 20px;
+	text-align: center;
 }
 
 main h2 {
-	padding: 20px 0px;
 	font-family: "PT sans", serif;
 	font-size: 110%;
-	margin: 0 auto;
+	text-align: center;
+	padding-top: 50px;
 }
 
 section h2 {
@@ -220,7 +218,7 @@ section h2 {
 
 .view-more-post {
 	display: block;
-	max-width: 90%;
+	max-width: 100%;
 	background-color: var(--darg-green);
 	color: var(--white);
 	padding: 10px 10px;
@@ -230,6 +228,8 @@ section h2 {
 	margin: 20px auto;
 	float: center;
 	cursor: pointer;
+	width: 150px;
+	border-radius: 4px;
 }
 
 .view-more-post a {
@@ -256,18 +256,11 @@ footer a {
 /* WEB RESPONSIVE */
 
 @media screen and (min-width: 414px) {
-	.hero-img {
-		width: 370px;
-	}
 	.slide {
 		width: 95%;
 	}
 	.p-pic img {
 		height: 90px;
-	}
-
-	.controls .arrow {
-		top: 30%;
 	}
 
 	.p-name {
@@ -300,7 +293,7 @@ footer a {
 	}
 
 	.hero h1 {
-		font-size: 120%;
+		font-size: 160%;
 		padding: 10px;
 	}
 
@@ -311,7 +304,7 @@ footer a {
 	}
 
 	main h2 {
-		font-size: 1.6rem;
+		font-size: 160%;
 	}
 
 	.slide h2 {
@@ -379,6 +372,10 @@ footer a {
 		height: 220px;
 	}
 
+	.heading-1 {
+		font-size: 160%;
+	}
+
 	.p-name {
 		font-size: 140%;
 	}
@@ -414,9 +411,16 @@ footer a {
 		font-size: 150%;
 	}
 
+	main h2 {
+		font-size: 200%;
+		padding-left: 40px;
+		padding-top: 70px;
+	}
+
 	.slide h1 {
-		padding-left: 20px;
+		padding: 0 0 50px 0px;
 		font-size: 190%;
+		text-align: center;
 	}
 
 	.slide h2 {
@@ -574,11 +578,7 @@ footer a {
 	}
 
 	.slide {
-		margin-bottom: 100px;
-	}
-
-	.slide h1 {
-		padding: 0 0 0px 100px;
+		margin-bottom: 0px;
 	}
 
 	.slide h2 {

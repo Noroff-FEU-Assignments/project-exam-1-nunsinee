@@ -59,7 +59,7 @@ section {
 
 .controls .arrow {
 	position: absolute;
-	top: 25%;
+	top: 30%;
 	cursor: pointer;
 }
 
@@ -113,6 +113,12 @@ section {
 	height: 120px;
 }
 
+@media screen and (min-width: 375px) {
+	.slider section {
+		width: 100%;
+	}
+}
+
 @media screen and (min-width: 414px) {
 	.hero-img {
 		height: 120px;
@@ -124,7 +130,7 @@ section {
 
 	.slide-img img {
 		width: 100%;
-		height: 120px;
+		height: 150px;
 	}
 
 	.slider section {
@@ -137,6 +143,12 @@ section {
 
 	section h2 {
 		font-size: 110%;
+	}
+
+	.controls .arrow {
+		position: absolute;
+		top: 25%;
+		cursor: pointer;
 	}
 }
 
@@ -254,6 +266,10 @@ section {
 		top: 530px;
 	}
 
+	.controls .arrow {
+		top: 30%;
+	}
+
 	.fad {
 		font-size: 200%;
 	}
@@ -264,7 +280,7 @@ section {
 
 	.slide-img img {
 		width: 100%;
-		height: 350px;
+		height: 380px;
 	}
 }
 
@@ -315,7 +331,7 @@ section {
 	}
 
 	.slide-img img {
-		height: 450px;
+		height: 550px;
 	}
 
 	.slide a {
@@ -336,9 +352,5 @@ section {
 	span p {
 		font-size: 200%;
 		font-weight: bold;
-	}
-
-	.slide {
-		height: 700px;
 	}
 }

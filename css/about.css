@@ -25,7 +25,7 @@
 body {
 	font-family: "PT sans", serif;
 	background: var(--main-bg);
-	font-size: 1rem;
+	font-size: 100%;
 	height: auto;
 }
 
@@ -59,10 +59,6 @@ nav {
 	max-width: 100%;
 	display: flex;
 	flex-direction: column;
-	color: var(--darg-green);
-	border-radius: var(--main-radius);
-	padding: var(--padding-left-right);
-	align-content: space-between;
 }
 
 .hero h1 {
@@ -71,7 +67,7 @@ nav {
 	padding: 5px;
 	font-family: "PT sans", serif;
 	font-size: 100%;
-	background-color: rgba(250, 223, 149, 0.171);
+	background-color: rgba(243, 198, 74, 0.17);
 }
 
 .hero .fab {
@@ -97,6 +93,7 @@ footer {
 	width: 100%;
 	display: block;
 	text-align: right;
+	padding-right: 10px;
 }
 
 .fab {
@@ -109,7 +106,6 @@ footer {
 	height: 100px;
 	background-position: center;
 	background-size: cover;
-	border-radius: var(--border-radius-image);
 }
 
 .hero-img img {
@@ -163,7 +159,8 @@ p {
 	display: block;
 	max-width: 250px;
 	max-height: 250px;
-	padding: 20px;
+	border-radius: 4px;
+	margin: 20px;
 }
 
 footer a {
@@ -195,6 +192,7 @@ footer a {
 @media screen and (min-width: 768px) {
 	main {
 		margin: 0 auto;
+		width: 95%;
 	}
 
 	nav {
@@ -217,16 +215,14 @@ footer a {
 	}
 
 	.gallery-box {
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-content: space-between;
-		padding-bottom: 60px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 2rem;
 	}
 
 	.gallery-box img {
-		max-width: 350px;
-		max-height: 350px;
-		padding: 10px 20px;
+		max-width: 90%;
 	}
 
 	main h2 {
@@ -248,12 +244,21 @@ footer a {
 	footer a {
 		font-size: 130%;
 	}
+
+	.content-box {
+		margin: 0 auto;
+	}
 }
 
 @media screen and (min-width: 1024px) {
 	main {
 		margin: 0 auto;
 		width: 90%;
+	}
+
+	.content-box,
+	.gallery-box {
+		background-color: var(--main-bg);
 	}
 
 	.hero-img {
@@ -307,12 +312,6 @@ footer a {
 	.gallery-box {
 		padding-left: 60px;
 		background-color: var(--main-bg);
-	}
-	.gallery-box img {
-		max-width: 450px;
-		max-height: 450px;
-		padding: 10px 20px;
-		padding-bottom: 60px;
 	}
 
 	footer a {

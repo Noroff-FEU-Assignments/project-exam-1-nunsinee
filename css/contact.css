@@ -61,8 +61,6 @@ nav {
 	max-width: 100%;
 	display: flex;
 	flex-direction: column;
-	border-radius: var(--main-radius);
-	padding: var(--padding-left-right);
 	align-content: space-between;
 }
 
@@ -81,6 +79,7 @@ main h1 {
 	color: var(--black);
 	padding-left: 20px;
 	font-family: "PT sans", serif;
+	margin: 0 auto;
 }
 
 main {
@@ -101,6 +100,7 @@ footer {
 	width: 100%;
 	display: block;
 	text-align: right;
+	padding-right: 10px;
 }
 
 .fab {
@@ -114,7 +114,6 @@ footer {
 	height: 100px;
 	background-position: center;
 	background-size: cover;
-	border-radius: var(--border-radius-image);
 }
 
 .hero-img img {
@@ -129,22 +128,27 @@ footer {
 
 /*Contact Form*/
 .contact-box {
-	padding: 10px 0px 20px 10px;
-	border-radius: 3px;
+	width: 90%;
 	display: flex;
 	flex-direction: column;
 	border-radius: var(--border-radius-image);
+	margin: 0 auto;
 }
 
 form {
-	width: 300px;
+	width: 100%;
 	padding: 20px;
 	background-color: #fff;
 	font-size: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .form-box {
 	padding: 10px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 label {
@@ -192,6 +196,7 @@ button {
 	margin-left: 20px;
 	font-size: 120%;
 	cursor: pointer;
+	border-radius: var(--border-radius-image);
 }
 
 label:focus-within {
@@ -222,13 +227,14 @@ footer a {
 /* WEB RESPONSIVE */
 
 @media screen and (min-width: 375px) {
-	.contact-box {
-		padding: 10px 0px 20px 10px;
-	}
-	form {
-		max-width: 330px;
-		padding: 20px;
+	main {
+		width: 95%;
 		margin: 0 auto;
+	}
+
+	main h1 {
+		text-align: left;
+		padding-left: 50px;
 	}
 }
 
@@ -238,15 +244,9 @@ footer a {
 	}
 
 	form {
-		max-width: 360px;
+		max-width: 100%;
 		padding: 25px;
 		margin: 0 auto;
-	}
-}
-
-@media screen and (min-width: 500px) {
-	.hero-img {
-		height: 120px;
 	}
 }
 
@@ -266,8 +266,9 @@ footer a {
 	}
 
 	main h1 {
-		font-size: 145%;
+		font-size: 155%;
 		text-align: center;
+		padding-left: 0;
 	}
 
 	button {
@@ -288,6 +289,8 @@ footer a {
 	form {
 		width: 90%;
 		margin: 0 auto;
+		background-color: var(--main-bg);
+		padding-left: 160px;
 	}
 
 	.form-box,
@@ -305,9 +308,9 @@ footer a {
 		padding-bottom: 20px;
 	}
 
+	footer,
 	footer a {
-		/* font-size: 120%; */
-		margin: o auto;
+		margin: 60px 0;
 	}
 }
 
@@ -315,29 +318,38 @@ footer a {
 	.hero-img {
 		height: 220px;
 	}
-	form {
+
+	.content-box {
 		width: 100%;
-		background-color: var(--white);
-		margin: 0 auto;
 	}
+
 	button {
 		font-size: 130%;
 	}
+
 	label {
 		font-size: 120%;
 	}
+
 	main h1 {
 		font-size: 150%;
 	}
+
 	.hero h2 {
 		font-size: 130%;
 	}
+
 	footer a {
 		font-size: 130%;
 	}
 }
 
 @media screen and (min-width: 1024px) {
+	main {
+		width: 60%;
+		margin: 0 auto;
+	}
+
 	.hero .fab {
 		padding: 10px;
 		font-size: 25px;
@@ -346,6 +358,7 @@ footer a {
 	.hero-img {
 		height: 250px;
 	}
+
 	.hero h2 {
 		font-size: 2rem;
 		width: 100%;
@@ -353,7 +366,8 @@ footer a {
 
 	main h1 {
 		font-size: 2.4rem;
-		padding-left: 0px;
+		text-align: left;
+		padding: 50px 0 30px 50px;
 	}
 
 	form {
@@ -426,6 +440,8 @@ footer a {
 	}
 
 	footer a {
+		padding-top: 100px;
 		font-size: 150%;
+		text-align: center;
 	}
 }
