@@ -77,7 +77,7 @@ nav {
 }
 
 main {
-	width: 95%;
+	width: 100%;
 	background: var(--main-bg);
 	grid-area: main;
 	border-radius: var(--main-radius);
