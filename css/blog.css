@@ -237,21 +237,21 @@ footer a {
 @media screen and (min-width: 320px) {
 	.container {
 		width: 320px;
-		overflow-y: hidden;
+		overflow: hidden;
 	}
 }
 
 @media screen and (min-width: 375px) {
 	.container {
 		width: 375px;
-		overflow-y: hidden;
+		overflow: hidden;
 	}
 }
 
 @media screen and (min-width: 414px) {
 	.container {
 		width: 414px;
-		overflow-y: hidden;
+		overflow: hidden;
 	}
 
 	.hero-img {
