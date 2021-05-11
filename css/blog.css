@@ -234,26 +234,7 @@ footer a {
 
 /* WEB RESPONSIVE */
 
-@media screen and (min-width: 320px) {
-	.container {
-		width: 320px;
-		overflow: hidden;
-	}
-}
-
-@media screen and (min-width: 375px) {
-	.container {
-		width: 375px;
-		overflow: hidden;
-	}
-}
-
 @media screen and (min-width: 414px) {
-	.container {
-		width: 414px;
-		overflow: hidden;
-	}
-
 	.hero-img {
 		height: 120px;
 	}
