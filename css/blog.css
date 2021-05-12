@@ -283,12 +283,10 @@ footer a {
 	.post-item {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 0.5fr 0.2fr 0.3fr;
+		grid-template-rows: 1.5fr 0.2fr 0.1fr 0.2fr;
 		grid-template-areas: "p-pic" "p-name" "p-by" "p-view";
 		grid-gap: 1rem;
-		padding: 5px auto;
-		margin: 25px 0;
-		padding: 20px 20px;
+		max-height: 100%;
 	}
 
 	.p-pic img {
@@ -424,10 +422,6 @@ footer a {
 		padding: 20px;
 	}
 
-	main h2 {
-		margin-top: 70px;
-	}
-
 	.hero-img {
 		height: 300px;
 	}
@@ -517,8 +511,9 @@ footer a {
 	}
 
 	.post-item {
-		grid-template-rows: 1.2fr 0.2fr 0.1fr 0.1fr;
-		padding: 40px;
+		grid-template-rows: 1fr 0.1fr 0.25fr 0.25fr;
+		padding: 20px;
+		height: 450px;
 	}
 
 	footer a {

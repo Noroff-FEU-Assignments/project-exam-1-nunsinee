@@ -60,7 +60,7 @@ body {
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 	margin: 20px 0px;
 	padding: 20px;
-	background-color: rgba(237, 255, 72, 0.15);
+	background-color: rgb(229, 242, 107);
 	border-radius: var(--border-radius-image);
 	height: 260px;
 }
@@ -109,13 +109,13 @@ body {
 
 .search-container {
 	width: 90%;
-	text-align: center;
+	text-align: left;
 	padding: 30px 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(230, 255, 252, 0.15);
+	background-color: var(--darg-green);
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	border-radius: var(--border-radius-image);
 	margin: 0 auto;
@@ -123,7 +123,7 @@ body {
 
 main h4 {
 	font-size: 120%;
-	color: var(--darg-green);
+	color: var(--white);
 }
 
 #search-form {
@@ -152,9 +152,6 @@ input[type="text"] {
 	font-size: 90%;
 }
 
-@media screen and (min-width: 414px) {
-}
-
 @media screen and (min-width: 768px) {
 	.postItems-container-results {
 		width: 100%;
@@ -168,14 +165,13 @@ input[type="text"] {
 	}
 
 	.post-item-results .p-name-s {
-		font-size: 120%;
+		font-size: 110%;
 	}
 
 	.search-container {
 		width: 80%;
 		margin: 0 auto;
-		text-align: left;
-		margin-bottom: 50px;
+		text-align: center;
 	}
 
 	main h4 {
@@ -183,15 +179,15 @@ input[type="text"] {
 	}
 
 	#search-form::after {
-		top: 30px;
+		top: 5px;
 		font-size: 120%;
 	}
 
 	input[type="text"] {
-		font-size: 120%;
-		margin: 20px 0;
+		width: 100%;
 		height: 3rem;
 	}
+
 	.match-post {
 		width: 70%;
 	}
@@ -226,7 +222,8 @@ input[type="text"] {
 	}
 
 	#search-form::after {
-		top: 20px;
+		top: 15px;
+		right: 40px;
 		font-size: 150%;
 	}
 
@@ -238,5 +235,26 @@ input[type="text"] {
 
 	.p-name-s {
 		font-size: 140%;
+	}
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+	input[type="text"] {
+		width: 100%;
+	}
+
+	#search-form {
+		width: 90%;
+	}
+
+	#search-form::after {
+		top: 25px;
+		right: 20px;
+		font-size: 150%;
+	}
+
+	input[type="text"] {
+		font-size: 140%;
+		height: 4rem;
 	}
 }

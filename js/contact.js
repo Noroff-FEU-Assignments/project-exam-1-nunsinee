@@ -45,6 +45,7 @@ form.addEventListener("submit", () => {
 	message.innerHTML = `<div class="message"> Your message has been sent </div>`;
 	formSubmissionHandler();
 	submitForm();
+	form.reset();
 });
 
 ////end///

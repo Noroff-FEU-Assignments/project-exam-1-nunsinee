@@ -39,7 +39,7 @@ img {
 
 .container {
 	display: grid;
-	height: 100vh;
+	max-height: 100vh;
 	grid-template-columns: 1fr;
 	grid-template-rows: 0.4fr 2fr 2fr 5fr 0.1fr;
 	grid-template-areas:
@@ -571,10 +571,6 @@ footer a {
 
 	.hero-img {
 		height: 350px;
-	}
-
-	.hero {
-		margin-bottom: 100px;
 	}
 
 	.slide {
