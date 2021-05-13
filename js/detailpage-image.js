@@ -1,9 +1,5 @@
-const submitComment = document.querySelector("input");
-
 const openModalImg = document.querySelector(".image");
 const modalImg = document.querySelector(".modalImg");
-
-submitComment.addEventListener("click", (e) => {});
 
 const urlImg =
 	"https://krabistaycation.thaifolkinnorway.com/wp-json/wp/v2/media?parent=" +
