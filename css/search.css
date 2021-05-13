@@ -60,9 +60,9 @@ body {
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 	margin: 20px 0px;
 	padding: 20px;
-	background-color: rgb(229, 242, 107);
+	background-color: rgb(248, 219, 56);
 	border-radius: var(--border-radius-image);
-	height: 260px;
+	height: 300px;
 }
 
 .p-pic-s {
@@ -115,15 +115,15 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--darg-green);
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	background-color: rgb(255, 239, 149);
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 	border-radius: var(--border-radius-image);
 	margin: 0 auto;
 }
 
 main h4 {
 	font-size: 120%;
-	color: var(--white);
+	color: var(--black);
 }
 
 #search-form {
@@ -145,7 +145,7 @@ input[type="text"] {
 	width: 90%;
 	background-color: var(--white);
 	border: none;
-	border: 1px solid var(--darg-green);
+	border: 1px solid var(--black);
 	border-radius: var(--border-radius-image);
 	padding: 5px 5px;
 	height: 2rem;
@@ -162,6 +162,7 @@ input[type="text"] {
 
 	.post-item-results {
 		width: 100%;
+		height: 300px;
 	}
 
 	.post-item-results .p-name-s {

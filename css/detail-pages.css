@@ -165,8 +165,11 @@ p {
 
 .comment-respond {
 	font-family: "PT sans", serif;
-	max-width: 100%;
-	width: 280px;
+	width: 250px;
+}
+
+.comment-respond form {
+	width: 100%;
 }
 
 label,
@@ -177,12 +180,16 @@ label,
 input[type="text"],
 input[type="email"],
 textarea {
-	max-width: 100%;
+	max-width: 90%;
 	padding: 5px 8px;
 	border-radius: var(--border-radius-image);
 	border: 1px solid #888;
 	font-size: 100%;
 	display: block;
+}
+
+p.comment-form-comment {
+	max-width: 90%;
 }
 
 textarea {
@@ -246,6 +253,22 @@ footer {
 	padding: 20px;
 	margin: 20px 0;
 }
+
+.hide-linkcomment {
+	display: block;
+	max-width: 300px;
+	height: 4rem;
+}
+
+.comment-iframe {
+	max-width: 90%;
+	height: 2rem;
+	border: 1px solid #000;
+	background-color: #243f3c;
+	color: #f5fafa;
+	overflow: hidden;
+}
+
 /* Change to comment form */
 
 footer {

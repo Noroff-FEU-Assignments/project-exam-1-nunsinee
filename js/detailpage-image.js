@@ -1,5 +1,10 @@
+const submitComment = document.querySelector("input");
+
 const openModalImg = document.querySelector(".image");
 const modalImg = document.querySelector(".modalImg");
+
+submitComment.addEventListener("click", (e) => {});
+
 const urlImg =
 	"https://krabistaycation.thaifolkinnorway.com/wp-json/wp/v2/media?parent=" +
 	id;
@@ -9,9 +14,9 @@ async function getImages() {
 		const responseImg = await fetch(urlImg);
 		const dataImg = await responseImg.json();
 
-		console.log(dataImg);
 		modalImg.innerHTML = "";
 		openModalImg.innerHTML = "";
+
 		displayImages(dataImg);
 	} catch (error) {
 		console.error(error);

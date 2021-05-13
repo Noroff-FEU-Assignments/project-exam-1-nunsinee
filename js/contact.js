@@ -85,7 +85,7 @@ function validateEmail(email) {
 	return patternMatches;
 }
 
-//post data//////////////////////////
+//Send data from Contact form to Wordpress
 const formSubmissionHandler = (event) => {
 	event.preventDefault();
 
@@ -108,5 +108,3 @@ const formSubmissionHandler = (event) => {
 			// Handle the case when there's a problem with the request
 		});
 };
-
-/// manage with error
