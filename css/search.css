@@ -115,7 +115,8 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #ffd902bf;
+	/* background-color: #ffd902bf; */
+	background-color: rgb(50 50 93 / 25%);
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 	border-radius: var(--border-radius-image);
 	margin: 0 auto;
@@ -130,7 +131,7 @@ main h4 {
 	display: flex;
 	position: relative;
 	align-content: center;
-	width: 80%;
+	width: 100%;
 }
 
 #search-form::after {
