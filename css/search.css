@@ -60,7 +60,7 @@ body {
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 	margin: 20px 0px;
 	padding: 20px;
-	background-color: var(--darg-green);
+	background-color: rgb(251, 247, 208);
 	border-radius: var(--border-radius-image);
 	height: 300px;
 }
@@ -115,7 +115,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--darg-green);
+	background-color: #ffd902bf;
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 	border-radius: var(--border-radius-image);
 	margin: 0 auto;
@@ -123,7 +123,7 @@ body {
 
 main h4 {
 	font-size: 120%;
-	color: var(--white);
+	color: var(--black);
 }
 
 #search-form {
