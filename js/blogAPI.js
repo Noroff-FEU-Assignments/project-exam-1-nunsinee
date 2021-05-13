@@ -84,4 +84,4 @@ setTimeout(() => {
 	}
 
 	loading.classList.remove("loader");
-}, 1000);
+}, 3000);
