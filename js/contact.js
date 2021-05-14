@@ -43,13 +43,9 @@ textArea.addEventListener("input", () => {
 
 form.addEventListener("submit", () => {
 	submitForm();
-	//message.innerHTML = `<div class="message"> Your message has been sent </div>`;
-	//form.reset();
 });
 
 ////end///
-
-//form.addEventListener("submit", submitForm);
 
 //2.function to run when the form is submitted
 function submitForm() {
@@ -63,7 +59,7 @@ function submitForm() {
 	) {
 		//display the message when the form has been submitted
 
-		message.innerHTML = `<div class="message"> Your message has been sent </div>`;
+		message.innerHTML = `<div class="message"> Your message has been sent!</div>`;
 		formSubmissionHandler();
 		form.reset();
 	} else {
