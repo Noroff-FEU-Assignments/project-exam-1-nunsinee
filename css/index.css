@@ -516,6 +516,10 @@ section h2 {
 		padding: 20 0px;
 	}
 
+	.post-item {
+		height: 360px;
+	}
+
 	.p-pic,
 	.p-name,
 	.p-by,
