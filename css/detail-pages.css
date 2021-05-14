@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 :root {
 	--main-bg: #f2f2f2;
 	--hightlight-color: #03a696;
@@ -27,11 +27,13 @@ body {
 	font-family: "PT sans", serif;
 	background: var(--main-bg);
 	font-size: 100%;
-	height: auto;
 }
 
 p {
 	font-family: "PT sans", serif;
+	width: 100%;
+	line-height: 1rem;
+	display: inline-block;
 }
 
 img {
@@ -87,6 +89,8 @@ main {
 	padding-top: var(--main-padding);
 	padding: var(--padding-left-right);
 	max-width: 100%;
+	height: 100%;
+	display: block;
 }
 
 footer {
@@ -134,22 +138,27 @@ footer a {
 }
 
 main h2 {
-	padding-top: 20px;
+	width: 100%;
+	/* padding-top: 20px; */
 	font-family: "PT sans", serif;
+	color: var(--darg-green);
 	font-size: 120%;
 }
 
 main h4 {
-	padding-bottom: 5px;
+	width: 100%;
 	font-family: "PT sans", serif;
 	font-size: 100%;
 	color: var(--heading);
+	padding: 10px 0 20px 0;
+	/* border-bottom: var(--darg-green) 2px solid; */
 }
 
 /*Page content*/
 .content-box {
+	width: 100%;
 	background-color: var(--white);
-	padding: 10px 10px 20px 10px;
+	padding: 10px 0px;
 	border-radius: var(--border-radius-image);
 	display: flex;
 	flex-direction: column;
@@ -160,6 +169,7 @@ main h4 {
 	padding: 10px 5px;
 	line-height: 1.5rem;
 	font-size: calc(100% + 1vw);
+	/* border-top: var(--darg-green) 2px solid; */
 }
 
 p {
@@ -168,104 +178,6 @@ p {
 }
 
 /* adjust for modal image---end*/
-
-/* Comment Form*/
-
-.comment-respond {
-	font-family: "PT sans", serif;
-	width: 250px;
-}
-
-.comment-respond form {
-	width: 100%;
-}
-
-label,
-.comments-note {
-	font-family: "PT sans", serif;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-	max-width: 90%;
-	padding: 5px 8px;
-	border-radius: var(--border-radius-image);
-	border: 1px solid #888;
-	font-size: 100%;
-	display: block;
-}
-
-p.comment-form-comment {
-	max-width: 90%;
-}
-
-textarea {
-	height: 100px;
-}
-
-.blocks-gallery-item__caption {
-	width: 100%;
-}
-
-textarea {
-	max-width: 100%;
-}
-
-input[type="checkbox"] {
-	width: 20px;
-	height: 20px;
-	border-color: #04747f 1px solid;
-}
-
-.submit {
-	display: block;
-	font-family: "PT sans", serif;
-	max-width: 100%;
-	background-color: var(--darg-green);
-	color: var(--white);
-	padding: 5px 10px;
-	font-weight: 700;
-	margin-bottom: 10px;
-	text-align: right;
-	font-size: 100%;
-	border: none;
-}
-
-.comment-respond h3 {
-	padding-top: 20px;
-	color: var(--darg-green);
-}
-
-button {
-	display: block;
-	max-width: 100%;
-	background-color: var(--darg-green);
-	color: var(--white);
-	padding: 8px 10px;
-	text-align: right;
-	margin: 20px auto;
-	float: left;
-	border: none;
-	margin-left: 20px;
-	font-size: 120%;
-	cursor: pointer;
-}
-
-.hide-linkcomment {
-	display: none;
-	max-width: 300px;
-	height: 4rem;
-}
-
-.comment-iframe {
-	max-width: 90%;
-	height: 2rem;
-	border: 1px solid #000;
-	background-color: #243f3c;
-	color: #f5fafa;
-	overflow: hidden;
-}
 
 /* WEB RESPONSIVE */
 @media screen and (min-width: 375px) {
@@ -363,9 +275,7 @@ button {
 
 	p {
 		line-height: 2.3rem;
-		padding: 20px 5px;
-		width: 700px;
-		margin: 0 auto;
+		padding: 20px;
 	}
 
 	footer a {
@@ -385,15 +295,16 @@ button {
 	main h2 {
 		font-size: 200%;
 		padding-left: 0px;
-		width: 90%;
+		text-align: center;
+		width: 100%;
 		margin: 0 auto;
 	}
 
 	main h4 {
 		font-size: 120%;
 		padding: 0;
-		width: 80%;
 		margin: 0 auto;
+		text-align: left;
 	}
 
 	.content-box {
@@ -437,6 +348,10 @@ button {
 		text-align: left;
 	}
 
+	main h4 {
+		width: 80%;
+	}
+
 	.content-box {
 		width: 90%;
 		margin: 0 auto;
@@ -467,21 +382,21 @@ button {
 }
 
 @media screen and (min-width: 1280px) {
-	.img-excepert {
-		max-width: 70%;
+	main {
+		width: 80%;
 	}
 
 	main h2 {
 		font-size: 200%;
 		padding-left: 75px;
-		width: 85%;
+		width: 100%;
 		margin: 0 auto;
 		text-align: left;
 	}
 
 	main h4 {
 		font-size: 120%;
-		padding-left: 70px;
+		padding-left: 0px;
 		width: 80%;
 		margin: 0 auto;
 	}
@@ -504,7 +419,6 @@ button {
 	.image:first-child {
 		order: 1;
 		width: 40%;
-		margin: 30px;
 	}
 
 	nav {
@@ -522,7 +436,7 @@ button {
 
 	main h2 {
 		font-size: 250%;
-		padding-left: 70px;
+		padding-left: 130px;
 	}
 
 	main h4 {
@@ -536,7 +450,7 @@ button {
 	}
 
 	p {
-		width: 900px;
+		width: 960px;
 		align-content: center;
 		line-height: 2.5rem;
 		margin: 0;

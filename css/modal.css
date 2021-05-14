@@ -185,6 +185,7 @@
 	.img-excepert {
 		flex-direction: row;
 		height: auto;
+		border-radius: 4px;
 	}
 
 	.image:first-child {
@@ -197,26 +198,25 @@
 		order: 2;
 		width: 50%;
 		margin: 50px 0 0 0px;
+		padding: 0;
 	}
 
 	.image img {
 		height: 200px;
 	}
 
-	.excerpt {
-		padding: 0;
-	}
-
 	.excerpt p {
 		font-size: 130%;
 		text-align: left;
+		display: inline-block;
+		line-height: 2rem;
 	}
 }
 
 @media screen and (min-width: 834px) {
 	.img-excepert {
 		background-color: var(--main-bg);
-		max-width: 100%;
+		max-width: 90%;
 		margin: 0 auto;
 	}
 
@@ -281,7 +281,7 @@
 	}
 
 	.img-excepert {
-		max-width: 70%;
+		max-width: 80%;
 		margin: 30px auto;
 	}
 
@@ -298,7 +298,7 @@
 	.excerpt p {
 		font-size: 140%;
 		line-height: 2.5rem;
-		margin: 20px;
+		padding: 0 0 0 40px;
 	}
 
 	.image img {
@@ -318,15 +318,13 @@
 	}
 
 	.img-excepert {
-		width: 60%;
-		margin: 0 auto;
-		padding-top: 30px;
+		width: 80%;
+		padding: 40px;
 	}
 
 	.image:first-child {
 		order: 1;
 		width: 40%;
-		margin: 20px 0;
 	}
 
 	.excerpt {
@@ -335,7 +333,7 @@
 	}
 
 	.excerpt p {
-		padding: 0 0 0 10px;
+		padding: 0 0 0 40px;
 	}
 
 	.close {
@@ -357,6 +355,6 @@
 	}
 
 	.image img {
-		height: 300px;
+		height: 250px;
 	}
 }
