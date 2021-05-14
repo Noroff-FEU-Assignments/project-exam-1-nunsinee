@@ -132,7 +132,10 @@ footer a {
 
 .slide a {
 	margin: 2px 5px;
-	color: var(--button-darkgreen);
+	max-width: 100%;
+	/* color: #0c4345; */
+	color: #9e4809;
+	font-weight: 900;
 	text-decoration-line: underline;
 	font-size: 110%;
 }
@@ -140,6 +143,8 @@ footer a {
 .slide h2 {
 	color: var(--button-darkgreen);
 	font-size: 110%;
+	max-width: 100%;
+	text-align: center;
 }
 
 .heading-1 {
@@ -220,7 +225,13 @@ section h2 {
 .p-view a {
 	color: var(--darg-green);
 	background-color: var(--main-bg);
-	padding: 5px 8px;
+	padding: 5px 10px;
+	font-weight: 900;
+	border-radius: var(--border-radius-image);
+}
+
+button {
+	border: none;
 }
 
 .view-more-post {
@@ -233,15 +244,19 @@ section h2 {
 	margin-bottom: 10px;
 	text-align: center;
 	margin: 20px auto;
-	float: center;
 	cursor: pointer;
 	width: 150px;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 .view-more-post a {
 	color: var(--white);
-	padding: 5px 10px;
+}
+
+.view-more-post a:hover {
+	color: rgba(250, 193, 6, 0.979);
+	border-block: 2px solid rgba(250, 193, 6, 0.979);
 }
 
 /* load-container will set differnt position on diferent page */
@@ -358,13 +373,12 @@ section h2 {
 
 	.slide a {
 		margin: 2px 5px;
-		color: var(--button-darkgreen);
-		text-decoration-line: underline;
 		font-size: 140%;
 	}
 
 	p-view a {
 		font-size: 120%;
+		font-weight: 900;
 	}
 
 	.view-more-post a {
@@ -447,7 +461,7 @@ section h2 {
 	}
 
 	.slide a {
-		font-size: 180%;
+		font-size: 200%;
 	}
 
 	.fab {

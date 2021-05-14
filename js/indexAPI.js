@@ -57,7 +57,7 @@ setTimeout(() => {
 			showCard.innerHTML += `<section><div class="slide-img"><img src="${posts[i].featured_image.large}" alt="aonang sunset"></div>
 		<div class="slide-detail"><h2>${links[i].title.rendered}</h2></div>
 		<div class="slide-postdate"><span><p>By ${authorName.name}-${links[i].formatted_date}</p></span></div>
-		<div class="read-more"><a href="blog_detail.html?id=${links[i].id}">Read more</a></div></section>`;
+		<div class="read-more"><a href="blog_detail.html?id=${links[i].id}">Read more..</a></div></section>`;
 		}
 	}
 
