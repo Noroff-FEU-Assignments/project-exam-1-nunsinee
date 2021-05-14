@@ -331,7 +331,7 @@ section h2 {
 	.post-item {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 2fr 0.5fr 0.2fr 0.3fr;
+		grid-template-rows: 1fr 0.5fr 0.2fr 0.3fr;
 		grid-template-areas:
 			"p-pic "
 			"p-name "
@@ -341,7 +341,7 @@ section h2 {
 		grid-gap: 0.2rem;
 		width: 100%;
 		margin: 30px 0;
-		height: 420px;
+		height: 320px;
 	}
 
 	.p-pic img {
