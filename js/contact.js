@@ -55,7 +55,6 @@ form.addEventListener("submit", () => {
 //2.function to run when the form is submitted
 function submitForm() {
 	//event.preventDefault();
-
 	if (
 		checkLength(contactName.value, 4) &&
 		checkLength(subject.value, 14) &&
@@ -63,12 +62,12 @@ function submitForm() {
 		checkLength(textArea.value, 24)
 	) {
 		//display the message when the form has been submitted
-		formSubmissionHandler();
 		message.innerHTML = `<div class="message"> Your message has been sent </div>`;
 		form.reset();
 	} else {
 		message.innerHTML = "";
 	}
+	formSubmissionHandler();
 }
 
 //3.function to check if the length of the input value is valid
