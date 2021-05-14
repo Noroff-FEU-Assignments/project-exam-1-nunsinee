@@ -250,7 +250,7 @@ section h2 {
 	display: flex;
 	justify-content: center;
 	margin-top: 4em;
-	position: absolute;
+	position: fixed;
 	top: 35%;
 	left: 50%;
 }
@@ -551,7 +551,7 @@ section h2 {
 	}
 
 	.load-container {
-		top: 50%;
+		top: 10%;
 		left: 50%;
 	}
 }
@@ -638,5 +638,10 @@ section h2 {
 
 	footer a {
 		font-size: 180%;
+	}
+
+	.load-container {
+		top: 70%;
+		left: 50%;
 	}
 }

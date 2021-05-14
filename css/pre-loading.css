@@ -79,3 +79,14 @@
 		border-radius: 4em;
 	}
 }
+
+@media screen and (min-width: 1440px) {
+	.loader::before,
+	.loader::after {
+		content: "";
+		width: 4em;
+		height: 4em;
+		position: absolute;
+		border-radius: 4em;
+	}
+}
