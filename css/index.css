@@ -27,7 +27,6 @@ body {
 	font-family: "PT sans", serif;
 	background: var(--main-bg);
 	font-size: 100%;
-	height: auto;
 }
 
 img {
@@ -97,6 +96,14 @@ footer {
 	grid-area: footer;
 	border-radius: var(--main-radius);
 	padding-top: var(--main-padding);
+	max-width: 100%;
+	max-height: 20%;
+	margin: 0 auto;
+}
+
+footer a {
+	color: var(--darg-green);
+	text-align: center;
 }
 
 .social-share {
@@ -237,13 +244,15 @@ section h2 {
 	padding: 5px 10px;
 }
 
-footer a {
-	width: 100%;
-	padding: var(--padding-left-right);
-	font-size: 100%;
-	color: var(--darg-green);
-	padding-bottom: 20px;
-	margin: 20px 0;
+/* load-container will set differnt position on diferent page */
+
+.load-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 4em;
+	position: absolute;
+	top: 35%;
+	left: 50%;
 }
 
 @media screen and (min-width: 375px) {
@@ -360,6 +369,10 @@ footer a {
 	.view-more-post a {
 		font-size: 140%;
 		max-width: 90%;
+	}
+
+	footer {
+		padding-top: 5em;
 	}
 
 	footer a {
@@ -529,9 +542,17 @@ footer a {
 		font-size: 110%;
 	}
 
+	footer {
+		padding-top: 6em;
+	}
+
 	footer a {
-		margin-top: 40px;
-		font-size: 150;
+		font-size: 150%;
+	}
+
+	.load-container {
+		top: 50%;
+		left: 50%;
 	}
 }
 
@@ -613,10 +634,6 @@ footer a {
 
 	.view-more-post a {
 		font-size: 150%;
-	}
-
-	footer {
-		padding-top: 5em;
 	}
 
 	footer a {

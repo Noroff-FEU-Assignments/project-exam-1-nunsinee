@@ -6,13 +6,16 @@
 	--darg-orange: #f75e06;
 }
 
+/* .load-container: this class will be on each css page to control fix position */
+
+/* 
 .load-container {
 	display: flex;
 	justify-content: center;
 	margin-top: 4em;
 	position: relative;
 	top: 8em;
-}
+} */
 
 .loader {
 	position: relative;
@@ -21,8 +24,8 @@
 .loader::before,
 .loader::after {
 	content: "";
-	width: 1.5em;
-	height: 1.5em;
+	width: 2em;
+	height: 2em;
 	position: absolute;
 	border-radius: 4em;
 }

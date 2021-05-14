@@ -94,6 +94,14 @@ footer {
 	grid-area: footer;
 	border-radius: var(--main-radius);
 	padding-top: var(--main-padding);
+	max-width: 100%;
+	max-height: 20%;
+	margin: 0 auto;
+}
+
+footer a {
+	color: var(--darg-green);
+	text-align: center;
 }
 
 .social-share {
@@ -244,16 +252,6 @@ button {
 	cursor: pointer;
 }
 
-footer {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	padding: var(--padding-left-right);
-	font-size: 100%;
-	padding: 20px;
-	margin: 20px 0;
-}
-
 .hide-linkcomment {
 	display: none;
 	max-width: 300px;
@@ -267,19 +265,6 @@ footer {
 	background-color: #243f3c;
 	color: #f5fafa;
 	overflow: hidden;
-}
-
-/* Change to comment form */
-
-footer {
-	width: 100%;
-	font-size: 100%;
-	padding-bottom: 20px;
-	margin: 20px 0;
-}
-
-footer a {
-	color: var(--footer-color);
 }
 
 /* WEB RESPONSIVE */
@@ -421,8 +406,14 @@ footer a {
 		height: 200px;
 	}
 
+	footer {
+		justify-content: center;
+		float: center;
+	}
+
 	footer a {
 		font-size: 130%;
+		text-align: center;
 	}
 }
 
@@ -556,8 +547,6 @@ footer a {
 	}
 
 	footer a {
-		margin-top: 100px;
-		padding-left: 90px;
 		font-size: 150%;
 	}
 }

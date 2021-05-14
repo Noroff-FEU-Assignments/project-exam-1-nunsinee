@@ -256,8 +256,12 @@
 @media screen and (min-width: 1280px) {
 	.modal {
 		left: 5%;
-		width: 70%;
-		height: 90vh;
+		width: 60%;
+		height: 70vh;
+	}
+
+	.modal img {
+		height: 400px;
 	}
 
 	.img-excepert {
@@ -291,6 +295,10 @@
 		left: 5%;
 		width: 70%;
 		height: 90vh;
+	}
+
+	.modal img {
+		height: 600px;
 	}
 
 	.img-excepert {

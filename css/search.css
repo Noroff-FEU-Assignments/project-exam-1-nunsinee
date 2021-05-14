@@ -144,14 +144,14 @@ main h4 {
 }
 
 input[type="text"] {
-	width: 90%;
+	width: 100%;
 	background-color: var(--white);
 	border: none;
 	border: 1px solid var(--black);
 	border-radius: var(--border-radius-image);
 	padding: 5px 5px;
 	height: 2rem;
-	font-size: 90%;
+	font-size: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -219,9 +219,8 @@ input[type="text"] {
 		width: 80%;
 		margin: 0 auto;
 		text-align: center;
-		padding-bottom: 50px;
+		padding: 50px 50px;
 		align-items: center;
-		padding-top: 50px;
 	}
 
 	#search-form::after {
