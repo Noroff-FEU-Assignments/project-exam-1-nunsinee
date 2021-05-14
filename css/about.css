@@ -362,7 +362,7 @@ p {
 	.gallery-box img {
 		max-width: 450px;
 		max-height: 450px;
-		padding: 10px;
+		border-radius: var(--border-radius-image);
 	}
 
 	footer a {
