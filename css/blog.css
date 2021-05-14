@@ -537,11 +537,11 @@ main h2 {
 		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 2.5rem;
+		grid-gap: 2rem;
 	}
 
 	.post-item {
-		grid-template-rows: 1fr 0.1fr 0.25fr 0.25fr;
+		grid-template-rows: 0.8fr 0.1fr 0.25fr 0.25fr;
 		padding: 20px;
 		height: 450px;
 	}
