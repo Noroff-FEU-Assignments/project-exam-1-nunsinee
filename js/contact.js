@@ -44,7 +44,7 @@ textArea.addEventListener("input", () => {
 form.addEventListener("submit", () => {
 	formSubmissionHandler();
 	submitForm();
-	//message.innerHTML = `<div class="message"> Your message has been sent </div>`;
+	message.innerHTML = `<div class="message"> Your message has been sent </div>`;
 	//form.reset();
 });
 
