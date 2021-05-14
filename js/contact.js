@@ -43,9 +43,9 @@ textArea.addEventListener("input", () => {
 
 form.addEventListener("submit", () => {
 	submitForm();
-	message.innerHTML = `<div class="message"> Your message has been sent </div>`;
 	formSubmissionHandler();
-	form.reset();
+	//message.innerHTML = `<div class="message"> Your message has been sent </div>`;
+	//form.reset();
 });
 
 ////end///
@@ -62,7 +62,7 @@ function submitForm() {
 		checkLength(textArea.value, 24)
 	) {
 		//display the message when the form has been submitted
-		//message.innerHTML = `<div class="message"> Your message has been sent </div>`;
+		message.innerHTML = `<div class="message"> Your message has been sent </div>`;
 		form.reset();
 	} else {
 		message.innerHTML = "";
