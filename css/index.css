@@ -517,7 +517,7 @@ section h2 {
 	}
 
 	.post-item {
-		height: 360px;
+		height: 400px;
 	}
 
 	.p-pic,
@@ -582,6 +582,10 @@ section h2 {
 		grid-gap: 3rem;
 		height: auto;
 		margin-bottom: 50px;
+	}
+
+	.post-item {
+		height: 450px;
 	}
 
 	.p-view a,
