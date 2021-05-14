@@ -42,7 +42,6 @@ textArea.addEventListener("input", () => {
 /////addEventlistener
 
 form.addEventListener("submit", () => {
-	//formSubmissionHandler();
 	submitForm();
 	//message.innerHTML = `<div class="message"> Your message has been sent </div>`;
 	//form.reset();
@@ -62,6 +61,7 @@ function submitForm() {
 		checkLength(textArea.value, 24)
 	) {
 		//display the message when the form has been submitted
+		formSubmissionHandler();
 		message.innerHTML = `<div class="message"> Your message has been sent </div>`;
 		form.reset();
 	} else {
@@ -99,12 +99,6 @@ const formSubmissionHandler = (event) => {
 		body,
 	})
 		.then((response) => response.json())
-		.then((response) => {
-			// Determine if the submission is not valid
-			if (isFormSubmissionSuccess(response)) {
-				// Handle the case when there are validation errors
-			}
-		})
 		.catch((error) => {
 			// Handle the case when there's a problem with the request
 		});
