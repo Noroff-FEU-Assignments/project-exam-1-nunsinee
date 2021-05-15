@@ -224,12 +224,12 @@ main h2 {
 
 .view-more-post {
 	background-color: var(--darg-green);
-	color: #f8eb73;
+	color: #f8ac09;
 }
 
 .view-more-postless {
 	background-color: var(--darg-green);
-	color: #ffffff;
+	color: var(--white);
 }
 
 .view-more-post a {
@@ -237,9 +237,8 @@ main h2 {
 }
 
 .view-more-post a:hover {
-	color: #f8eb73;
-	/* background-color: #03a696;
-	padding: 10px 10px; */
+	/* color: #f8eb73; */
+	color: #f8ac09;
 }
 
 /* Toggle */
