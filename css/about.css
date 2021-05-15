@@ -70,10 +70,6 @@ nav {
 	background-color: rgba(243, 198, 74, 0.17);
 }
 
-.hero .fab {
-	color: var(--black);
-}
-
 main {
 	background: var(--main-bg);
 	grid-area: main;
@@ -105,8 +101,9 @@ footer a {
 }
 
 .fab {
-	padding: 2px;
-	font-size: 70%;
+	padding: 2px 5px;
+	font-size: 100%;
+	color: var(--black);
 }
 
 .hero-img {
@@ -130,6 +127,7 @@ main h2 {
 	padding-bottom: 5px;
 	font-family: "PT sans", serif;
 	font-size: 120%;
+	color: var(--darg-green);
 }
 
 /*Page content*/
@@ -143,14 +141,15 @@ main h2 {
 
 .text-box {
 	width: 100%;
-	padding: 10px 5px;
-	line-height: 1.5rem;
+	line-height: 2rem;
 	font-size: calc(100% + 1vw);
 }
 
 p {
-	line-height: 2.5rem;
+	display: inline-block;
+	line-height: 2rem;
 	padding: 10px 5px;
+	width: 95%;
 }
 
 .gallery-box {
@@ -203,12 +202,14 @@ p {
 	.hero-img {
 		height: 200px;
 	}
+
 	.hero h1 {
 		width: 100%;
 		padding: 10px;
 		font-size: 120%;
 	}
-	.hero .fab {
+
+	.fab {
 		padding: 8px;
 		margin-bottom: 20px;
 		font-size: 130%;
@@ -274,10 +275,11 @@ p {
 		font-size: 180%;
 	}
 
-	.hero .fab {
+	.fab {
 		padding: 10px;
-		font-size: 150%;
+		font-size: 180%;
 	}
+
 	footer a {
 		font-size: 140%;
 	}
@@ -292,9 +294,9 @@ p {
 		height: 300px;
 	}
 
-	.hero .fab {
+	.fab {
 		padding: 10px;
-		font-size: 180%;
+		font-size: 200%;
 	}
 
 	main h2 {
@@ -338,9 +340,9 @@ p {
 		padding-bottom: 40px;
 	}
 
-	.hero .fab {
-		padding: 10px;
-		font-size: 180%;
+	.fab {
+		font-size: 220%;
+		padding: 15px;
 	}
 
 	.hero-img {

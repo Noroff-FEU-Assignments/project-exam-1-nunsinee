@@ -8,7 +8,7 @@
 	--white: #ffffff;
 	--black: #000;
 	--medium-green: #3d8a8b;
-	--orange-bg: #e4844c;
+	--orange-bg: #772f06;
 	--button-bg: #99dada;
 	--border-radius-image: 5px;
 	--padding-left-right: 0 20px;
@@ -72,10 +72,6 @@ nav {
 	background-color: rgba(250, 239, 239, 0.6);
 }
 
-.hero .fab {
-	color: var(--black);
-}
-
 main {
 	width: 100%;
 	background: var(--main-bg);
@@ -109,8 +105,9 @@ footer a {
 }
 
 .fab {
-	padding: 2px;
-	font-size: 70%;
+	padding: 2px 5px;
+	font-size: 100%;
+	color: var(--black);
 }
 
 .hero-img {
@@ -214,8 +211,6 @@ main h2 {
 .view-more-postless {
 	display: block;
 	max-width: 90%;
-	background-color: var(--darg-green);
-	color: var(--white);
 	padding: 10px 10px;
 	font-weight: 700;
 	margin-bottom: 10px;
@@ -225,6 +220,26 @@ main h2 {
 	cursor: pointer;
 	width: 150px;
 	border-radius: 4px;
+}
+
+.view-more-post {
+	background-color: var(--darg-green);
+	color: #f8eb73;
+}
+
+.view-more-postless {
+	background-color: var(--darg-green);
+	color: #ffffff;
+}
+
+.view-more-post a {
+	color: var(--white);
+}
+
+.view-more-post a:hover {
+	color: #f8eb73;
+	/* background-color: #03a696;
+	padding: 10px 10px; */
 }
 
 /* Toggle */
@@ -276,7 +291,7 @@ main h2 {
 		height: 200px;
 	}
 
-	.hero .fab {
+	.fab {
 		padding: 8px;
 		margin-bottom: 20px;
 		font-size: 130%;
@@ -393,7 +408,7 @@ main h2 {
 		height: 250px;
 	}
 
-	.hero .fab {
+	.fab {
 		padding: 10px;
 		font-size: 180%;
 	}
@@ -452,9 +467,9 @@ main h2 {
 		height: 300px;
 	}
 
-	.hero .fab {
+	.fab {
 		padding: 10px;
-		font-size: 180%;
+		font-size: 200%;
 	}
 
 	footer a {
@@ -490,6 +505,11 @@ main h2 {
 
 	nav {
 		padding-bottom: 40px;
+	}
+
+	.fab {
+		font-size: 220%;
+		padding: 15px;
 	}
 
 	.p-name {

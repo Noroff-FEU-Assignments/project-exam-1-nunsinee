@@ -23,6 +23,8 @@ const titlePage = document.querySelector("title");
 
 //preview image -Modal image
 const images = document.querySelector(".image"); // create images in content-box
+const expandIcon = document.querySelector(".expand-icon");
+
 const modal = document.querySelector(".modal");
 const modalContent = document.querySelector(".modalContent");
 const modalText = document.querySelector(".modalIext");
@@ -33,6 +35,11 @@ const urlID =
 	"https://krabistaycation.thaifolkinnorway.com/wp-json/wp/v2/posts/" + id;
 
 images.addEventListener("click", (e) => {
+	e.preventDefault();
+	modal.classList.add("appear");
+});
+
+expandIcon.addEventListener("click", (e) => {
 	e.preventDefault();
 	modal.classList.add("appear");
 });

@@ -78,10 +78,6 @@ nav {
 	background-color: rgba(209, 248, 236, 0.4);
 }
 
-.hero .fab {
-	color: var(--black);
-}
-
 main {
 	background: var(--main-bg);
 	grid-area: main;
@@ -108,16 +104,46 @@ footer a {
 	text-align: center;
 }
 
+.submenu {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+	height: 40px;
+	padding: 5px 20px;
+}
+
+main h5 {
+	width: 100%;
+	font-family: "PT sans", serif;
+	font-size: 100%;
+	font-weight: 900;
+	text-align: left;
+	display: inline-block;
+	padding: 0px 5px;
+	cursor: pointer;
+}
+
+h5 a {
+	color: var(--black);
+}
+
+h5 a:hover {
+	color: var(--hightlight-color);
+}
+
 .social-share {
 	width: 100%;
 	display: block;
 	text-align: right;
-	padding-right: 10px;
+	/* padding-right: 10px; */
 }
 
-.fab {
-	padding: 2px;
-	font-size: 70%;
+.fab,
+.far {
+	padding: 2px 5px;
+	font-size: 100%;
+	color: var(--black);
 }
 
 .hero-img {
@@ -139,7 +165,6 @@ footer a {
 
 main h2 {
 	width: 100%;
-	/* padding-top: 20px; */
 	font-family: "PT sans", serif;
 	color: var(--darg-green);
 	font-size: 120%;
@@ -151,7 +176,6 @@ main h4 {
 	font-size: 100%;
 	color: var(--heading);
 	padding: 10px 0 20px 0;
-	/* border-bottom: var(--darg-green) 2px solid; */
 }
 
 /*Page content*/
@@ -223,6 +247,12 @@ p {
 		width: 768px;
 	}
 
+	.fab,
+	h5 a,
+	.far {
+		font-size: 130%;
+	}
+
 	.comment-respond {
 		width: 760px;
 		padding-bottom: 50px;
@@ -248,17 +278,9 @@ p {
 		font-size: 180%;
 	}
 
-	.hero .fab {
-		padding: 8px;
-		margin-bottom: 20px;
-		font-size: 130%;
-	}
-
-	.gallery-box {
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-content: space-between;
-		padding-bottom: 60px;
+	.submenu {
+		height: 60px;
+		padding: 5px 20px;
 	}
 
 	.content-box {
@@ -292,11 +314,15 @@ p {
 		width: 95%;
 	}
 
+	.submenu {
+		height: 70px;
+	}
+
 	main h2 {
 		font-size: 200%;
 		padding-left: 0px;
-		text-align: center;
-		width: 100%;
+		text-align: left;
+		width: 85%;
 		margin: 0 auto;
 	}
 
@@ -305,6 +331,7 @@ p {
 		padding: 0;
 		margin: 0 auto;
 		text-align: left;
+		width: 85%;
 	}
 
 	.content-box {
@@ -342,14 +369,8 @@ p {
 
 	main h2 {
 		font-size: 200%;
-		padding-left: 70px;
-		width: 100%;
 		margin: 0 auto;
 		text-align: left;
-	}
-
-	main h4 {
-		width: 80%;
 	}
 
 	.content-box {
@@ -366,9 +387,11 @@ p {
 		color: black;
 	}
 
-	.hero .fab {
+	.fab,
+	h5 a,
+	.far {
 		padding: 10px;
-		font-size: 150%;
+		font-size: 180%;
 	}
 
 	p {
@@ -394,10 +417,21 @@ p {
 		text-align: left;
 	}
 
+	.submenu {
+		margin-bottom: 50px;
+	}
+
+	.fab,
+	h5 a,
+	.far {
+		padding: 10px;
+		font-size: 200%;
+	}
+
 	main h4 {
 		font-size: 120%;
 		padding-left: 0px;
-		width: 80%;
+		width: 85%;
 		margin: 0 auto;
 	}
 
@@ -429,9 +463,11 @@ p {
 		height: 350px;
 	}
 
-	.hero .fab {
-		padding: 10px;
-		font-size: 180%;
+	.fab,
+	h5 a,
+	.far {
+		font-size: 220%;
+		padding: 15px;
 	}
 
 	main h2 {

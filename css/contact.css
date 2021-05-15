@@ -76,7 +76,7 @@ nav {
 main h1 {
 	font-size: 130%;
 	max-width: 100%;
-	color: var(--black);
+	color: var(--darg-green);
 	padding-left: 20px;
 	font-family: "PT sans", serif;
 	margin: 0 auto;
@@ -112,9 +112,9 @@ footer a {
 }
 
 .fab {
-	padding: 2px;
-	font-size: 16px;
+	padding: 2px 5px;
 	color: var(--black);
+	font-size: 100%;
 }
 
 .hero-img {
@@ -274,7 +274,7 @@ textarea:hover {
 	}
 
 	.fab {
-		font-size: 20px;
+		font-size: 130%;
 		padding: 10px;
 	}
 
@@ -351,9 +351,9 @@ textarea:hover {
 		margin: 0 auto;
 	}
 
-	.hero .fab {
+	.fab {
 		padding: 10px;
-		font-size: 25px;
+		font-size: 180%;
 	}
 
 	.hero-img {
@@ -406,6 +406,10 @@ textarea:hover {
 	.hero-img {
 		height: 300px;
 	}
+
+	.fab {
+		font-size: 200%;
+	}
 }
 
 @media only screen and (min-width: 1440px) and (max-width: 1920px) {
@@ -428,8 +432,9 @@ textarea:hover {
 		margin-bottom: 10px;
 	}
 
-	.hero .fab {
-		font-size: 180%;
+	.fab {
+		font-size: 220%;
+		padding: 15px;
 	}
 
 	label {

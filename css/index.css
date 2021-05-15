@@ -72,10 +72,6 @@ nav {
 	padding: 5px;
 }
 
-.hero .fab {
-	color: var(--black);
-}
-
 .slide {
 	grid-area: slide;
 	border-radius: var(--main-radius);
@@ -114,8 +110,9 @@ footer a {
 }
 
 .fab {
-	padding: 2px;
-	font-size: 70%;
+	padding: 2px 5px;
+	color: var(--black);
+	font-size: 100%;
 }
 
 .hero-img {
@@ -255,8 +252,9 @@ button {
 }
 
 .view-more-post a:hover {
-	color: rgba(250, 193, 6, 0.979);
-	border-block: 2px solid rgba(250, 193, 6, 0.979);
+	color: #f8eb73;
+	/* background-color: #03a696;
+	padding: 10px 10px; */
 }
 
 /* load-container will set differnt position on diferent page */
@@ -321,7 +319,7 @@ button {
 		padding: 10px;
 	}
 
-	.hero .fab {
+	.fab {
 		padding: 8px;
 		margin-bottom: 20px;
 		font-size: 130%;
@@ -466,7 +464,7 @@ button {
 
 	.fab {
 		padding: 10px;
-		font-size: 20px;
+		font-size: 180%;
 	}
 
 	.postlist-container {
@@ -517,7 +515,7 @@ button {
 
 	.fab {
 		padding: 10px;
-		font-size: 180%;
+		font-size: 200%;
 	}
 
 	main h2 {
@@ -586,8 +584,9 @@ button {
 		padding: 20px;
 	}
 
-	.hero .fab {
-		font-size: 180%;
+	.fab {
+		font-size: 220%;
+		padding: 15px;
 	}
 
 	.postlist-container {
