@@ -173,6 +173,8 @@ section h2 {
 .postlist-container {
 	padding: 10px 10px;
 	border-radius: var(--border-radius-image);
+	width: 90%;
+	margin: 0 auto;
 }
 
 .post-item {
@@ -207,7 +209,7 @@ section h2 {
 .p-name {
 	grid-area: p-name;
 	font-weight: bold;
-	font-size: 100%;
+	font-size: 110%;
 }
 
 .p-by {
@@ -222,7 +224,7 @@ section h2 {
 }
 
 .p-name h4 {
-	font-size: 110%;
+	font-size: 120%;
 }
 
 .p-view a {
@@ -279,6 +281,9 @@ button {
 	.p-pic img {
 		height: 90px;
 		width: 100%;
+	}
+	.postItems-container {
+		max-width: 90%;
 	}
 }
 
