@@ -160,7 +160,6 @@ main h2 {
 		"p-view";
 
 	grid-gap: 1rem;
-	/* width: 100%; */
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 	margin: 20px 0px;
@@ -274,12 +273,20 @@ main h2 {
 	.p-view a {
 		font-size: 120%;
 	}
+
+	.p-pic img {
+		height: 120px;
+	}
 }
 
 @media screen and (min-width: 414px) {
 	.hero-img {
 		width: 100%;
 		height: 120px;
+	}
+
+	.p-pic img {
+		height: 130px;
 	}
 
 	.p-name {
@@ -292,6 +299,9 @@ main h2 {
 
 	.load-container {
 		top: 56%;
+	}
+	.post-item {
+		max-height: 300px;
 	}
 
 	footer a {
