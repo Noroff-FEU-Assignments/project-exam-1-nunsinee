@@ -70,11 +70,11 @@ nav {
 }
 
 .hero h1 {
-	font-family: "PT sans", serif;
+	font-family: "Lucida Grande", Verdana, sans-serif;
 	width: 100%;
 	color: var(--white);
 	padding: 5px;
-	font-size: 100%;
+	font-size: 90%;
 	background-color: rgba(209, 248, 236, 0.4);
 }
 

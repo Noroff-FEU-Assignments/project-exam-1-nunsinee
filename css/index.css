@@ -67,7 +67,8 @@ nav {
 	width: 100%;
 	color: #111010;
 	background: rgba(252, 250, 243, 0.33);
-	font-size: 100%;
+	font-size: 90%;
+	font-family: "Lucida Grande", Verdana, sans-serif;
 	padding: 5px;
 }
 
