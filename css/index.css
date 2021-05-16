@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap");
-
 :root {
 	--main-bg: #f2f2f2;
 	--hightlight-color: #03a696;
@@ -139,30 +138,35 @@ footer a {
 
 .slide h2 {
 	color: var(--button-darkgreen);
+	font-family: "Lucida Grande", Verdana, sans-serif;
 	font-size: 110%;
 	max-width: 100%;
 	text-align: center;
 }
 
 .heading-1 {
-	font-family: "PT sans", serif;
 	font-size: 120%;
+	font-family: "Lucida Grande", sans-serif;
 	text-transform: uppercase;
 }
 
 .slide h1 {
 	text-align: center;
+	font-family: "Lucida Grande", sans-serif;
+	color: var(--button-darkgreen);
 }
 
 main h2 {
-	font-family: "PT sans", serif;
+	font-family: "Lucida Grande", sans-serif;
 	font-size: 110%;
 	text-align: center;
 	padding-top: 50px;
+	color: var(--button-darkgreen);
 }
 
 section h2 {
 	font-size: 110%;
+	font-family: "Lucida Grande", Verdana, sans-serif;
 }
 
 /*Latest Posted Area*/
@@ -189,6 +193,7 @@ section h2 {
 	padding: 20px;
 	background-color: var(--white);
 	border-radius: var(--border-radius-image);
+	font-family: "PT sans", serif;
 }
 
 .p-pic {
@@ -213,6 +218,7 @@ section h2 {
 .p-view {
 	grid-area: p-view;
 	font-size: 110%;
+	font-family: "Lucida Grande", sans-serif;
 }
 
 .p-name h4 {
@@ -225,6 +231,7 @@ section h2 {
 	padding: 5px 10px;
 	font-weight: 900;
 	border-radius: var(--border-radius-image);
+	font-family: "Lucida Grande", sans-serif;
 }
 
 button {
@@ -245,10 +252,12 @@ button {
 	width: 150px;
 	border-radius: 4px;
 	cursor: pointer;
+	font-family: "Lucida Grande", sans-serif;
 }
 
 .view-more-post a {
 	color: var(--white);
+	font-family: "Lucida Grande", sans-serif;
 }
 
 .view-more-post a:hover {

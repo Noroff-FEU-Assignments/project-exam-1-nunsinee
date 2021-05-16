@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap");
-
 :root {
 	--main-bg: #f2f2f2;
 	--hightlight-color: #03a696;
@@ -64,10 +63,10 @@ nav {
 }
 
 .hero h1 {
-	width: 95%;
+	width: 100%;
 	color: var(--black);
 	padding: 5px;
-	font-family: "PT sans", serif;
+	font-family: "Lucida Grande", Verdana, sans-serif;
 	font-size: 100%;
 	background-color: rgba(250, 239, 239, 0.6);
 }
@@ -122,13 +121,14 @@ footer a {
 }
 
 .heading-1 {
-	font-family: "PT sans", serif;
+	font-family: "Lucida Grande", sans-serif;
 	font-size: 120%;
 	text-transform: uppercase;
 }
 
 main h2 {
-	font-family: "PT sans", serif;
+	font-family: "Lucida Grande", sans-serif;
+	color: var(--darg-green);
 	font-size: 110%;
 	margin-top: 30px;
 	padding: 40px 0 0px 0;
@@ -169,6 +169,7 @@ main h2 {
 	background-color: var(--white);
 	border-radius: var(--border-radius-image);
 	max-height: 260px;
+	font-family: "PT sans", serif;
 }
 
 .p-pic {
@@ -194,9 +195,11 @@ main h2 {
 .p-view {
 	grid-area: p-view;
 	font-size: 90%;
+	font-family: "Lucida Grande", sans-serif;
 }
 
 .p-view a {
+	font-family: "Lucida Grande", sans-serif;
 	color: var(--darg-green);
 	font-weight: bold;
 	background-color: var(--main-bg);
@@ -220,6 +223,7 @@ main h2 {
 	cursor: pointer;
 	width: 150px;
 	border-radius: 4px;
+	font-family: "Lucida Grande", Verdana, sans-serif;
 }
 
 .view-more-post {
@@ -470,6 +474,10 @@ main h2 {
 		font-size: 200%;
 	}
 
+	main h2 {
+		padding: 100px 0 80px 0px;
+	}
+
 	footer a {
 		margin-top: 40px;
 	}
@@ -540,7 +548,7 @@ main h2 {
 
 	main h2 {
 		font-size: 200%;
-		padding: 150px 0 0px 0px;
+		padding: 150px 0 80px 0px;
 	}
 
 	.p-view a,

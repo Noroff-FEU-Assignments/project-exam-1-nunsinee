@@ -69,7 +69,7 @@ nav {
 	width: 100%;
 	color: var(--black);
 	padding: 5px;
-	font-family: "PT sans", serif;
+	font-family: "Lucida Grande", Verdana, sans-serif;
 	background-color: rgba(185, 248, 248, 0.6);
 }
 
@@ -141,6 +141,7 @@ footer a {
 	flex-direction: column;
 	border-radius: var(--border-radius-image);
 	margin: 0 auto;
+	font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
 }
 
 form {
@@ -193,6 +194,7 @@ textarea {
 
 button {
 	display: block;
+	font-family: "Lucida Grande", sans-serif;
 	max-width: 100%;
 	background-color: var(--darg-green);
 	color: var(--white);

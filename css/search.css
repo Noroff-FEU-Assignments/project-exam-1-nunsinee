@@ -63,6 +63,7 @@ body {
 	background-color: rgb(251, 247, 208);
 	border-radius: var(--border-radius-image);
 	height: 300px;
+	font-family: "PT sans", serif;
 }
 
 .p-pic-s {

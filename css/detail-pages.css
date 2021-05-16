@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
 :root {
 	--main-bg: #f2f2f2;
 	--hightlight-color: #03a696;
@@ -30,7 +29,8 @@ body {
 }
 
 p {
-	font-family: "PT sans", serif;
+	font-family: "Lucida Sans", sans-serif;
+	font-size: 100%;
 	width: 100%;
 	line-height: 1rem;
 	display: inline-block;
@@ -70,10 +70,10 @@ nav {
 }
 
 .hero h1 {
+	font-family: "PT sans", serif;
 	width: 100%;
 	color: var(--white);
 	padding: 5px;
-	font-family: "PT sans", serif;
 	font-size: 100%;
 	background-color: rgba(209, 248, 236, 0.4);
 }
@@ -115,7 +115,7 @@ footer a {
 
 main h5 {
 	width: 100%;
-	font-family: "PT sans", serif;
+	font-family: "Lucida Grande", sans-serif;
 	font-size: 100%;
 	font-weight: 900;
 	text-align: left;
@@ -126,6 +126,7 @@ main h5 {
 
 h5 a {
 	color: var(--black);
+	font-family: "Lucida Grande", sans-serif;
 }
 
 h5 a:hover {
@@ -159,7 +160,6 @@ h5 a:hover {
 }
 
 .heading-1 {
-	font-family: "PT sans", serif;
 	text-transform: uppercase;
 }
 
@@ -172,7 +172,6 @@ main h2 {
 
 main h4 {
 	width: 100%;
-	font-family: "PT sans", serif;
 	font-size: 100%;
 	color: var(--heading);
 	padding: 10px 0 20px 0;
