@@ -277,6 +277,9 @@ main h2 {
 	.p-pic img {
 		height: 120px;
 	}
+	.post-item {
+		max-height: 290px;
+	}
 }
 
 @media screen and (min-width: 414px) {
