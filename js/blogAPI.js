@@ -65,7 +65,7 @@ setTimeout(() => {
 		for (let i = 0; i < getTenBlogs.length; i++) {
 			showPostItems.innerHTML += `
 		<div class="post-item">
-		<div class="p-pic"><img id="smallImg" src="${getTenBlogs[i].fimg_url}" alt="${getTenBlogs[i].title.rendered}"}"></div>
+		<div class="p-pic"><img id="smallImg" src="${getTenBlogs[i].fimg_url}" alt="${getTenBlogs[i].title.rendered}"></div>
 		<div class="p-name">${getTenBlogs[i].title.rendered}</div>
 		<div class="p-by"><span>By ${authorName.name}-${getTenBlogs[i].formatted_date}</span></div>
 		<div class="p-view"><a href="blog_detail.html?id=${getTenBlogs[i].id}">Read</a></div>`;
