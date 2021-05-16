@@ -173,7 +173,7 @@ section h2 {
 .postlist-container {
 	padding: 10px 10px;
 	border-radius: var(--border-radius-image);
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -282,9 +282,9 @@ button {
 		height: 90px;
 		width: 100%;
 	}
-	.postItems-container {
+	/* .postItems-container {
 		max-width: 90%;
-	}
+	} */
 }
 
 /* WEB RESPONSIVE */
