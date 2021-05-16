@@ -203,7 +203,7 @@ section h2 {
 }
 
 .p-pic img {
-	height: 90px;
+	height: 100px;
 }
 
 .p-name {
@@ -282,9 +282,9 @@ button {
 		height: 90px;
 		width: 100%;
 	}
-	/* .postItems-container {
-		max-width: 90%;
-	} */
+	.p-pic img {
+		height: 120px;
+	}
 }
 
 /* WEB RESPONSIVE */
@@ -294,7 +294,7 @@ button {
 		width: 95%;
 	}
 	.p-pic img {
-		height: 90px;
+		height: 130px;
 	}
 
 	.p-name {
