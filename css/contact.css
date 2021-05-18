@@ -359,7 +359,7 @@ textarea:hover {
 	}
 
 	.hero h2 {
-		font-size: 2rem;
+		font-size: 180%;
 		width: 100%;
 	}
 
@@ -377,7 +377,8 @@ textarea:hover {
 	}
 
 	button {
-		font-size: 1.4rem;
+		font-size: 180%;
+		font-weight: 900;
 	}
 
 	label {
@@ -403,6 +404,10 @@ textarea:hover {
 
 	.hero-img {
 		height: 300px;
+	}
+
+	button {
+		font-size: 200%;
 	}
 
 	.fab {
@@ -437,6 +442,10 @@ textarea:hover {
 
 	label {
 		font-size: 150%;
+	}
+
+	button {
+		font-size: 220%;
 	}
 
 	footer a {
