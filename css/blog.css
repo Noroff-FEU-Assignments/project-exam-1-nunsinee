@@ -114,10 +114,7 @@ footer a {
 	height: 100px;
 	background-position: center;
 	background-size: cover;
-}
-
-.hero-img img {
-	max-width: 100%;
+	background-image: url(/images/design-img/blog_1820.jpg);
 }
 
 .heading-1 {
