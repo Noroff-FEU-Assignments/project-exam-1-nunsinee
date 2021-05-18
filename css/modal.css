@@ -203,7 +203,7 @@
 	}
 
 	.modal img {
-		height: 600px;
+		height: 420px;
 	}
 
 	.img-excepert {
@@ -267,6 +267,10 @@
 		height: 230px;
 	}
 
+	.modal img {
+		height: 460px;
+	}
+
 	.excerpt p {
 		font-size: 140%;
 		padding-right: 20px;
@@ -274,11 +278,6 @@
 }
 
 @media screen and (min-width: 1204px) {
-	.img-excepert {
-		max-width: 100%;
-		margin: 0 auto;
-	}
-
 	.fal {
 		top: 40px;
 		left: 300px;
@@ -310,12 +309,12 @@
 
 	.modalContent {
 		width: 90%;
-		height: 80vh;
+		height: 90vh;
 		padding: 20px 20px;
 	}
 
 	.modal img {
-		height: 500px;
+		height: 480px;
 	}
 
 	.img-excepert {
@@ -349,6 +348,7 @@
 		left: 5%;
 		width: 70%;
 		height: 80vh;
+		padding: 20px;
 	}
 
 	.fal {

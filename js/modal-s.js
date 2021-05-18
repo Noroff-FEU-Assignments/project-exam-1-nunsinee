@@ -13,8 +13,10 @@ if (id === null) {
 ///////////////////////////  PREVIEW - MODAL IMAGE /////////////////////////////////////////
 
 const mainPhoto = document.querySelector("#hero-photo");
-const titlePost = document.querySelector(".post-title");
+const titlePost = document.querySelector("h2");
+const datePost = document.querySelector("h4");
 const contentBlog = document.querySelector(".content-box");
+//const openModalImg = document.querySelector(".image");
 
 // Change page title to one of the property
 const titlePage = document.querySelector("title");
@@ -70,7 +72,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function displayContent(data) {
 	mainPhoto.innerHTML = `<div class="hero-img" style="background-image: url(${data.better_featured_image.source_url}" alt="${data.title.rendered}"><h1>Escape to Krabi,Thailand with Krabifolk</h1></div>`;
-	titlePost.innerHTML = `<h2>${data.title.rendered}</h2><h4>By Krabifolk - ${data.formatted_date}</h4>`;
+	titlePost.innerHTML = `${data.title.rendered}`;
+	datePost.innerHTML = `By Krabifolk - ${data.formatted_date}`;
 	contentBlog.innerHTML = `<section class="text-box">${data.content.rendered}</section>`;
 	titlePage.innerHTML = `${data.title.rendered}`; //title pages
 	excepert.innerHTML = `${data.excerpt.rendered}`;
