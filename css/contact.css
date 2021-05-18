@@ -120,13 +120,9 @@ footer a {
 .hero-img {
 	width: 100%;
 	height: 100px;
+	background-image: url(/images/design-img/index-4_1820.jpg);
 	background-position: center;
 	background-size: cover;
-}
-
-.hero-img img {
-	max-width: 100%;
-	border-radius: var(--border-radius-image);
 }
 
 .heading-1 {

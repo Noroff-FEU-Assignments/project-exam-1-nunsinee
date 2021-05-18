@@ -118,6 +118,7 @@ footer a {
 .hero-img {
 	width: 100%;
 	height: 100px;
+	background-image: url(/images/design-img/longtail-boat-sunset-2-b.jpg);
 	background-position: center;
 	background-size: cover;
 }
