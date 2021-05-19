@@ -149,7 +149,7 @@ main h2 {
 .post-item {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1.5fr 0.3fr 0.1fr 0.1fr;
+	grid-template-rows: 2fr 0.5fr 0.2fr 0.3fr;
 	grid-template-areas:
 		"p-pic"
 		"p-name"
