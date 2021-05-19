@@ -149,7 +149,7 @@ main h2 {
 .post-item {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 2fr 0.5fr 0.2fr 0.3fr;
+	grid-template-rows: 1.5fr 0.2fr 0.1fr 0.2fr;
 	grid-template-areas:
 		"p-pic"
 		"p-name"
@@ -292,11 +292,15 @@ main h2 {
 	}
 
 	.p-name {
-		font-size: 110%;
+		font-size: 120%;
+	}
+
+	.p-by {
+		font-size: 100%;
 	}
 
 	.p-view a {
-		font-size: 90%;
+		font-size: 120%;
 	}
 
 	.load-container {
