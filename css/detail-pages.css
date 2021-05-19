@@ -177,6 +177,49 @@ main h4 {
 	padding: 10px 0 20px 0;
 }
 
+.content-box h2,
+.content-box h3,
+.content-box h4 {
+	width: 100%;
+	font-family: "PT sans", serif;
+	color: var(--black);
+	text-align: left;
+	padding: 10px 5px;
+	margin: 0 auto;
+}
+
+.content-box h5 {
+	padding: 5px;
+	font-family: "PT sans", serif;
+	margin: 0 auto;
+}
+
+.content-box h2 {
+	font-size: 120%;
+}
+
+.content-box h3 {
+	font-size: 110%;
+}
+
+.content-box h4 {
+	font-size: 100%;
+}
+
+.content-box ul {
+	font-size: 100%;
+	padding: 10px 0 10px 20px;
+	margin: 0;
+	text-align: left;
+}
+
+.content-box li {
+	font-size: 100%;
+	list-style-type: disc;
+	margin: 0;
+	text-align: left;
+}
+
 /*Page content*/
 .content-box {
 	width: 100%;
@@ -300,6 +343,38 @@ p {
 		margin: 0 auto;
 	}
 
+	.content-box h2,
+	.content-box h3,
+	.content-box h4 {
+		padding: 15px 20px;
+		line-height: 3rem;
+	}
+
+	.content-box li {
+		line-height: 3rem;
+	}
+
+	.content-box h5 {
+		padding: 20px;
+	}
+
+	.content-box ul {
+		padding: 10px 0 10px 50px;
+		margin: 0;
+	}
+
+	.content-box h2 {
+		font-size: 130%;
+	}
+
+	.content-box h3 {
+		font-size: 120%;
+	}
+
+	.content-box h4 {
+		font-size: 110%;
+	}
+
 	footer a {
 		font-size: 120%;
 	}
@@ -415,6 +490,10 @@ p {
 		width: 100%;
 		margin: 0 auto;
 		text-align: left;
+	}
+
+	footer a {
+		font-size: 120%;
 	}
 
 	.submenu {
