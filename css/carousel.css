@@ -59,7 +59,7 @@ section {
 
 .controls .arrow {
 	position: absolute;
-	top: 30%;
+	top: 35%;
 	cursor: pointer;
 }
 
@@ -242,7 +242,7 @@ section {
 	}
 
 	section {
-		padding: 20px 65px;
+		padding: 20px 35px;
 	}
 
 	.slide-img img {

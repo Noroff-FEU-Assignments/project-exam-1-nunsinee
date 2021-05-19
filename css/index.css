@@ -49,6 +49,7 @@ img {
 
 	grid-gap: 0.5rem;
 	margin: 0 auto;
+	width: 100%;
 }
 
 nav {
@@ -76,7 +77,6 @@ nav {
 	grid-area: slide;
 	border-radius: var(--main-radius);
 	padding-top: var(--main-padding);
-	max-width: 100%;
 	margin: 5px auto;
 }
 
@@ -116,16 +116,11 @@ footer a {
 }
 
 .hero-img {
-	width: 100%;
+	max-width: 100%;
 	height: 100px;
 	background-image: url(/images/design-img/longtail-boat-sunset-2-b.jpg);
 	background-position: center;
 	background-size: cover;
-}
-
-.hero-img img {
-	max-width: 100%;
-	border-radius: var(--border-radius-image);
 }
 
 .slide a {
@@ -155,12 +150,9 @@ footer a {
 	font-size: 120%;
 	font-family: "Lucida Grande", sans-serif;
 	text-transform: uppercase;
-}
-
-.slide h1 {
+	width: 100%;
+	margin: 0 auto;
 	text-align: center;
-	font-family: "Lucida Grande", sans-serif;
-	color: var(--button-darkgreen);
 }
 
 main h2 {
@@ -178,7 +170,6 @@ section h2 {
 
 /*Latest Posted Area*/
 .postlist-container {
-	padding: 10px 10px;
 	border-radius: var(--border-radius-image);
 	width: 100%;
 	margin: 0 auto;
@@ -249,16 +240,15 @@ button {
 
 .view-more-post {
 	display: block;
-	max-width: 100%;
 	background-color: var(--darg-green);
 	color: var(--white);
 	padding: 10px 10px;
 	font-weight: 700;
 	margin-bottom: 10px;
 	text-align: center;
-	margin: 20px auto;
+	margin: 0 auto;
 	cursor: pointer;
-	width: 150px;
+	max-width: 200px;
 	border-radius: 4px;
 	cursor: pointer;
 	font-family: "Lucida Grande", sans-serif;
@@ -313,6 +303,14 @@ button {
 
 	.p-by {
 		font-size: 90%;
+	}
+
+	.view-more-post a {
+		font-size: 130%;
+	}
+
+	footer {
+		padding-top: 50px;
 	}
 
 	footer a {
@@ -401,8 +399,8 @@ button {
 		font-weight: 900;
 	}
 
-	.view-more-post a {
-		font-size: 140%;
+	.view-more-post {
+		font-size: 130%;
 		max-width: 90%;
 	}
 
@@ -418,10 +416,6 @@ button {
 @media screen and (min-width: 834px) {
 	.hero-img {
 		height: 220px;
-	}
-
-	.slide p {
-		font-size: 120%;
 	}
 
 	.heading-1 {
@@ -523,11 +517,6 @@ button {
 		font-weight: 700;
 	}
 
-	.view-more-post a {
-		font-size: 150%;
-		max-width: 90%;
-	}
-
 	footer a {
 		font-size: 140%;
 	}
@@ -581,7 +570,8 @@ button {
 	}
 
 	.view-more-post a {
-		font-size: 150%;
+		font-size: 200%;
+		max-width: 100%;
 	}
 
 	.p-name h3 {
@@ -692,7 +682,7 @@ button {
 	}
 
 	.view-more-post a {
-		font-size: 150%;
+		font-size: 220%;
 	}
 
 	footer a {
