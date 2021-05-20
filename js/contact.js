@@ -98,6 +98,6 @@ const formSubmissionHandler = (event) => {
 	})
 		.then((response) => response.json())
 		.catch((error) => {
-			// Handle the case when there's a problem with the request
+			console.log(error);
 		});
 };
