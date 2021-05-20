@@ -170,6 +170,11 @@ textarea {
 	border: 1px solid #aaa;
 	font-size: 100%;
 	display: block;
+	font-family: "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+textarea {
+	height: 150px;
 }
 
 .form-error {
@@ -179,13 +184,16 @@ textarea {
 }
 
 .message {
-	background: var(--darg-green);
-	border: #fff solid 3px;
-	padding: 5px 10px;
-	color: var(--white);
+	background-color: #fcd39269;
+	font-family: "Lucida Sans", Verdana, sans-serif;
+	border: 2px solid var(--darg-green);
+	padding: 6px 10px;
+	color: var(--darg-green);
 	max-width: 100%;
-	border-radius: 4px;
+	border-radius: 5px;
 	margin-bottom: 20px;
+	font-size: 100%;
+	font-weight: 900;
 }
 
 button {
@@ -218,6 +226,22 @@ textarea:hover {
 .hide-iframe {
 	width: 100%;
 	/* display: none; */
+}
+
+.contact-info,
+.contact-info-2 {
+	display: block;
+	max-width: 100%;
+	font-size: 100%;
+	padding: 10px 20px;
+	height: auto;
+	margin: 0 auto;
+	/* line-height: 2rem; */
+}
+
+.contact-info-2 {
+	color: #1a5c63;
+	margin-bottom: 20px;
 }
 
 /* WEB RESPONSIVE */
@@ -282,11 +306,17 @@ textarea:hover {
 		font-size: 100%;
 	}
 
+	.contact-info,
+	.contact-info-2 {
+		max-width: 90%;
+		font-size: 120%;
+	}
+
 	form {
 		width: 90%;
 		margin: 0 auto;
 		background-color: var(--main-bg);
-		padding-left: 160px;
+		padding-left: 100px;
 	}
 
 	.form-box,
@@ -398,6 +428,19 @@ textarea:hover {
 }
 
 @media screen and (min-width: 1280px) {
+	.message {
+		font-size: 130%;
+	}
+
+	.contact-info,
+	.contact-info-2 {
+		font-size: 150%;
+	}
+
+	textarea {
+		height: 250px;
+	}
+
 	nav {
 		padding-bottom: 20px;
 	}
@@ -418,6 +461,14 @@ textarea:hover {
 @media only screen and (min-width: 1440px) and (max-width: 1920px) {
 	nav {
 		padding-bottom: 40px;
+	}
+
+	.contact-info,
+	.contact-info-2 {
+		font-size: 180%;
+	}
+	.contact-info-2 {
+		margin-bottom: 30px;
 	}
 
 	input[type="text"],
@@ -445,7 +496,7 @@ textarea:hover {
 	}
 
 	button {
-		font-size: 220%;
+		font-size: 200%;
 	}
 
 	footer a {

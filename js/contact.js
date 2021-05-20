@@ -43,6 +43,7 @@ textArea.addEventListener("input", () => {
 
 form.addEventListener("submit", () => {
 	submitForm();
+	form.reset();
 });
 
 ////end///
@@ -59,7 +60,7 @@ function submitForm() {
 	) {
 		//display the message when the form has been submitted
 
-		message.innerHTML = `<div class="message"> Your message has been sent!</div>`;
+		message.innerHTML = `<div class="message"> Thank you for your message !<br>I will reply you as soon as possible.</div>`;
 		formSubmissionHandler();
 		form.reset();
 	} else {
