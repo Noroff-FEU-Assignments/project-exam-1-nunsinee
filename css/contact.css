@@ -234,16 +234,20 @@ textarea:hover {
 .contact-info-2 {
 	display: block;
 	max-width: 100%;
-	font-size: 100%;
 	padding: 10px 20px;
 	height: auto;
 	margin: 0 auto;
 	/* line-height: 2rem; */
 }
 
+.contact-info {
+	font-size: 100%;
+}
+
 .contact-info-2 {
 	color: #1a5c63;
 	margin-bottom: 20px;
+	font-size: 90%;
 }
 
 /* WEB RESPONSIVE */
