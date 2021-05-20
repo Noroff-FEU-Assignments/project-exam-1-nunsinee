@@ -6,17 +6,6 @@
 	--darg-orange: #f75e06;
 }
 
-/* .load-container: this class will be on each css page to control fix position */
-
-/* 
-.load-container {
-	display: flex;
-	justify-content: center;
-	margin-top: 4em;
-	position: relative;
-	top: 8em;
-} */
-
 .loader {
 	position: relative;
 }
@@ -34,17 +23,17 @@
 	background: var(--darg-green);
 	left: 0;
 	transform: translateX(10px);
-	animation: Moveright 2s ease infinite;
+	animation: GoRight 2s ease infinite;
 }
 
 .loader::after {
 	background: var(--darg-orange);
 	right: 0;
 	transform: translateX(-10px);
-	animation: Moveleft 1s ease infinite;
+	animation: GoLeft 1s ease infinite;
 }
 
-@keyframes Moveright {
+@keyframes GoRight {
 	0% {
 		transform: translateX(-10px);
 	}
@@ -56,7 +45,7 @@
 		transform: translateX(-10px);
 	}
 }
-@keyframes Moveleft {
+@keyframes GoLeft {
 	0% {
 		transform: translateX(10px);
 	}
