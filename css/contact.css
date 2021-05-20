@@ -164,7 +164,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-	max-width: 100%;
+	width: 100%;
 	padding: 5px 8px;
 	border-radius: var(--border-radius-image);
 	border: 1px solid #aaa;
