@@ -348,6 +348,11 @@ textarea:hover {
 		height: 220px;
 	}
 
+	.contact-info,
+	.contact-info-2 {
+		max-width: 90%;
+	}
+
 	.content-box {
 		width: 100%;
 	}
@@ -418,6 +423,7 @@ textarea:hover {
 	input[type="text"],
 	input[type="email"],
 	textarea {
+		max-width: 70%;
 		padding: 15px 20px;
 	}
 
@@ -469,13 +475,6 @@ textarea:hover {
 	}
 	.contact-info-2 {
 		margin-bottom: 30px;
-	}
-
-	input[type="text"],
-	input[type="email"],
-	textarea {
-		padding: 15px 20px;
-		width: 100%;
 	}
 
 	.hero-img {
