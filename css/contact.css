@@ -316,7 +316,7 @@ textarea:hover {
 		width: 90%;
 		margin: 0 auto;
 		background-color: var(--main-bg);
-		padding-left: 100px;
+		padding-left: 0px;
 	}
 
 	.form-box,
