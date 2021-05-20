@@ -40,7 +40,7 @@ body {
 	max-width: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 0.2fr 0.1fr 0.2fr;
+	grid-template-rows: 0.8fr 0.1fr 0.05fr 0.1fr;
 	grid-template-areas:
 		"p-pic-s"
 		"p-name-s"
@@ -153,6 +153,9 @@ input[type="text"] {
 @media screen and (min-width: 375px) {
 	.search-container {
 		padding: 30px 20px;
+	}
+	.post-item-results {
+		height: 250px;
 	}
 }
 
