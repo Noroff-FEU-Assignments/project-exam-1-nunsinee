@@ -142,7 +142,7 @@ footer a {
 
 form {
 	width: 100%;
-	/* padding: 20px; */
+	padding: 10px;
 	background-color: #fff;
 	font-size: 100%;
 	margin: 0 auto;
@@ -171,6 +171,7 @@ textarea {
 	font-size: 100%;
 	display: block;
 	font-family: "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	height: auto;
 }
 
 textarea {
