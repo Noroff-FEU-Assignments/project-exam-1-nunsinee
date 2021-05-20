@@ -142,7 +142,7 @@ footer a {
 
 form {
 	width: 100%;
-	padding: 20px;
+	/* padding: 20px; */
 	background-color: #fff;
 	font-size: 100%;
 	margin: 0 auto;
@@ -175,6 +175,7 @@ textarea {
 
 textarea {
 	height: 150px;
+	width: 100%;
 }
 
 .form-error {
