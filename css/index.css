@@ -275,7 +275,6 @@ button {
 
 .read-more {
 	max-width: 50%;
-	/* background-color: #f7d577; */
 	background-color: var(--darg-green);
 	border-radius: 5px;
 	text-align: center;
@@ -284,8 +283,8 @@ button {
 }
 
 .read-more a {
-	/* color: black; */
-	color: white;
+	/* color: white; */
+	color: #f8ac09;
 }
 
 @media screen and (min-width: 375px) {
