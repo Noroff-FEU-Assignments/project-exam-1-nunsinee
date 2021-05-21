@@ -1,5 +1,3 @@
-/////////////////////////// QUERY STRING PAGE ID/////////////////////////////////////////
-
 //Get the id from the query string
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -10,7 +8,7 @@ if (id === null) {
 	location.href = "/";
 }
 
-///////////////////////////  PREVIEW - MODAL IMAGE /////////////////////////////////////////
+//Preview Image- modal image
 
 const mainPhoto = document.querySelector("#hero-photo");
 const titlePost = document.querySelector(".post-title");
