@@ -283,8 +283,11 @@ button {
 }
 
 .read-more a {
-	/* color: white; */
-	color: #f8ac09;
+	color: white;
+}
+
+.read-more a:hover {
+	color: rgb(240, 180, 14);
 }
 
 @media screen and (min-width: 375px) {
